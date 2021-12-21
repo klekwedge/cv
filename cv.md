@@ -1,9 +1,13 @@
 # Andrey Antonov
 ## Contact information:
 **Phone:** +7 000 000 00 00
+
 **E-mail:** @gmail.com
+
 **Telegram:** @username
+
 **Discord:** Andrey (@klekkwedge)
+
 [LinkedIn](https://www.linkedin.com/in/andrey-antonov-198197226/)
 
 ## Brief information about myself:
