@@ -82,7 +82,7 @@
     />
     <meta name="theme-color" content="#ffffff" />
     <link href="styles/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/vs2015.min.css">
+    <link rel="stylesheet" href="styles/vs2015.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -115,13 +115,13 @@
         </div>
       </header>
 
-      <main class="main-block">
-        <div class="main-block__container _container">
-          <section class="main-block__greetings greetings">
+      <main class="main">
+        <div class="main__container _container">
+          <section class="main__greetings greetings">
             <div class="greetings__my-photo">
               <img
                 class="greetings__image"
-                src="img/personal-photo.jpg"
+                src="assets/img/personal-photo.jpg"
                 alt="My personal photo"
               />
             </div>
@@ -129,8 +129,8 @@
             <h2 class="greetings__qualification">Intern Front-End Developer</h2>
           </section>
 
-          <section class="main-block__about-me about-me">
-            <h3 id="about-me" class="about-me__title title">
+          <section class="main__about-me about-me">
+            <h3 id="about-me" class="about-me__title _title">
               Brief information about myself
             </h3>
             <div class="about-me__text text">
@@ -145,8 +145,8 @@
             </div>
           </section>
 
-          <section class="main-block__skills skills">
-            <h3 id="skills" class="skills__title title">Skills:</h3>
+          <section class="main__skills skills">
+            <h3 id="skills" class="skills__title _title">Skills:</h3>
             <ul class="skills__list">
               <li class="skills__item skills__html">HTML-5 basics</li>
               <li class="skills__item skills__css">CSS-3 basics</li>
@@ -160,8 +160,8 @@
             </ul>
           </section>
 
-          <section class="main-block__strengths strengths">
-            <h3 id="strengths" class="strengths__title title">Strengths:</h3>
+          <section class="main__strengths strengths">
+            <h3 id="strengths" class="strengths__title _title">Strengths:</h3>
             <ul class="strengths__list">
               <li class="strengths__item">Communicative</li>
               <li class="strengths__item">Teamwork</li>
@@ -173,53 +173,74 @@
             </ul>
           </section>
 
-          <section class="main-block__code-example code-example">
-            <h3 id="code-example" class="code-example__title title">
+          <section class="main__code-example code-example">
+            <h3 id="code-example" class="code-example__title _title">
               Code example
             </h3>
-            <pre><code>
-
-      class Worker {
-        constructor(name, surname, rate, days) {
-          this.name = name;
-          this.surname = surname;
-          this.rate = rate;
-          this.days = days;
-        }
-        getSalary() {
-          return this.rate * this.days;
-        }
-      }
-
-      let Firstworker = new Worker('Иван', 'Иванов', 10, 31);
-      console.log(worker.name);
-      console.log(worker.surname); 
-      console.log(worker.rate); 
-      console.log(worker.days);
-      console.log(worker.getSalary());
-
-      let secondWorker = new Worker('Вася', 'Сидоров', 20, 15);
-      console.log(secondWorker.name);
-      console.log(secondWorker.surname); 
-      console.log(secondWorker.rate); 
-      console.log(secondWorker.days);
-      console.log(secondWorker.getSalary());
+            <pre class="code-example__code"><code>
+resetGame.addEventListener("click", function () {
+endGame.style.display = "none";
+              
+moveCounter = 0;
+moves.textContent = `Your moves: ${moveCounter}`;
+progressCounter = 0;
+              
+cards.forEach((card) => {
+  card.style.background = "linear-gradient(45deg, #fff1eb, #ace0f9)";
+  card.addEventListener("click", flipCard);
+  let randomPos = Math.floor(Math.random() * 20);
+  card.style.order = randomPos;
+});
               </code></pre>
+              <a class="code-example__link" href="https://imgur.com/2MNkOYF" target="_blank">Click to see sample code</a>
           </section>
 
-          <section class="main-block__projects projects">
-            <h3 id="projects" class="block__projects__title title">Projects</h3>
-            <div class="block__projects__text text">
-              <a
-                class="text__link"
-                href="https://github.com/klekkwedge/rsschool-cv"
-                >CV</a
-              >
-            </div>
+          <section class="main__projects projects">
+            <h3 id="projects" class="projects__title _title">Projects</h3>
+            <ul class="projects__list">
+              <li class="projects__item">
+                <a
+                  href="https://klekkwedge.github.io/my-pet-projects/js30-1.2-audio-player/"
+                  target="_blank"
+                  ><img class="projects__image" src="assets/img/audio-player.png" alt="Audio player image"/>
+                  <h4 class="projects__subtitle">Custom audio player</h4>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="https://klekkwedge.github.io/my-pet-projects/js30-3.2-memory-game/" target="_blank"
+                  ><img class="projects__image" src="assets/img/memory-game.png" alt="Memory game image"/>
+                  <h4 class="projects__subtitle">Memory game</h4>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="https://klekkwedge.github.io/my-pet-projects/js30-1.3-custom-video/" target="_blank"
+                  ><img class="projects__image" src="assets/img/custom-video.png" alt="Custom video image"/>
+                  <h4 class="projects__subtitle">Custom video</h4>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="https://klekkwedge.github.io/my-pet-projects/js30-2.2-image-galery/" target="_blank"
+                  ><img class="projects__image" src="assets/img/Image-galery.png" alt="Image galery image"/>
+                  <h4 class="projects__subtitle">Image galery</h4>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="https://klekkwedge.github.io/my-pet-projects/portfolio/" target="_blank"
+                  ><img class="projects__image" src="assets/img/photographer-portfolio.png" alt="Photographer portfolio image"/>
+                  <h4 class="projects__subtitle">Photographer portfolio</h4>
+                </a>
+              </li>
+              <li class="projects__item">
+                <a href="https://klekkwedge.github.io/my-pet-projects/js30-2.3-movie-app/" target="_blank"
+                  ><img class="projects__image" src="assets/img/movie-app.png" alt="Movie app image"/>
+                  <h4 class="projects__subtitle">Movie app</h4>
+                </a>
+              </li>
+            </ul>
           </section>
 
-          <section class="main-block__languages languages">
-            <h3 id="foreign-languages" class="languages__title title">
+          <section class="main__languages languages">
+            <h3 id="foreign-languages" class="languages__title _title">
               Foreign languages
             </h3>
             <ul class="languages__list">
@@ -232,67 +253,79 @@
       <footer class="footer">
         <div class="footer__container _container">
           <ul class="footer__list">
-            <li class="footer__text">© 2021 by Andrey Antonov</li>
-            <li class="footer__icon icon">
-              Phone:
-              <a class="link-white" href="tel:+79990009900">+7 999 000 99 00</a>
+            <li class="footer__item">
+              <ul class="footer__list-contacts contacts">
+                <li class="contacts__item">© 2021 by Andrey Antonov</li>
+                <li class="contacts__item">
+                  Phone:
+                  <a class="_link" href="tel:+79990009900"
+                    >+7 999 000 99 00</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  Email:
+                  <a class="_link" href="mailto:example@gmail.com"
+                    >example@gmail.com</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li class="footer__icon icon">
-              Email:
-              <a class="link-white" href="mailto:example@gmail.com"
-                >example@gmail.com</a
-              >
-            </li>
-            <li class="footer__icon icon">
-              <a href="https://telegram.org/">
-                <img
-                  class="icon__image"
-                  src="img/telegram.png"
-                  alt="Telegram icon"
-                />
-              </a>
-            </li>
-            <li class="footer__icon icon">
-              <a href="https://discord.com/">
-                <img
-                  class="icon__image"
-                  src="img/discord.png"
-                  alt="Discord icon"
-                />
-              </a>
-            </li>
-            <li class="footer__icon icon">
-              <a href="https://www.linkedin.com/feed/">
-                <img
-                  class="icon__image"
-                  src="img/linkedin.png"
-                  alt="Linkedin logo"
-                />
-              </a>
-            </li>
-            <li class="footer__icon icon">
-              <a href="https://github.com/">
-                <img
-                  class="icon__image"
-                  src="img/github.png"
-                  alt="Github logo"
-                />
-              </a>
-            </li>
-            <li class="footer__icon icon">
-              <a href="https://rs.school/js-stage0/">
-                <img
-                  class="icon__image"
-                  src="img/rs_school_js.svg"
-                  alt="RS-School logo"
-                />
-              </a>
+            <li class="footer__item">
+              <ul class="footer__list-links links">
+                <li class="links__item">
+                  <a href="https://telegram.org/">
+                    <img
+                      class="icon__image _icon"
+                      src="assets/img/telegram.png"
+                      alt="Telegram icon"
+                    />
+                  </a>
+                </li>
+                <li class="links__item">
+                  <a href="https://discord.com/">
+                    <img
+                      class="icon__image _icon"
+                      src="assets/img/discord.png"
+                      alt="Discord icon"
+                    />
+                  </a>
+                </li>
+                <li class="links__item">
+                  <a href="https://www.linkedin.com/in/andrey-antonov10101/">
+                    <img
+                      class="icon__image _icon"
+                      src="assets/img/linkedin.png"
+                      alt="Linkedin logo"
+                    />
+                  </a>
+                </li>
+                <li class="links__item">
+                  <a href="https://github.com/klekkwedge">
+                    <img
+                      class="icon__image _icon"
+                      src="assets/img/github.png"
+                      alt="Github logo"
+                    />
+                  </a>
+                </li>
+                <li class="links__item">
+                  <a href="https://rs.school/js-stage0/">
+                    <img
+                      class="icon__image _icon"
+                      src="assets/img/rs_school_js.svg"
+                      alt="RS-School logo"
+                    />
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </footer>
     </div>
     <script src="js/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>
