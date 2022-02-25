@@ -9,23 +9,34 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0px;
+  background-color: rgb(47, 55, 66); //rgb(229, 229, 229); ; //#4A90E2;
+}
+
+section {
+  background-color: #e7e7e9; //rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 35px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
 li {
   list-style-type: none;
   font-size: 16px;
   line-height: 150%;
   font-family: "Roboto", sans-serif;
 }
-ul {
-  padding-left: 0;
-}
 
 a {
   text-decoration: none;
 }
-body {
-  margin: 0px;
-  background-color: rgb(47, 55, 66); //rgb(229, 229, 229); ; //#4A90E2;
-}
+
 pre {
   padding: 0px 20px 20px 20px;
 }
@@ -65,19 +76,6 @@ code {
 /*-----Header--------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
-section {
-  background-color: #e7e7e9; //rgb(255, 255, 255);
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 35px;
-}
-
-.text {
-  font-size: 18px;
-  line-height: 150%;
-  font-family: "Roboto", sans-serif;
-}
-
 .header {
   background-color: rgb(36, 41, 48);
   // #495e70; //#4c6071;
@@ -89,6 +87,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 10px 20px;
   }
   &__link {
     font-size: 20px;
@@ -105,10 +104,12 @@ section {
   &__my-photo {
     padding: 10px 0px;
   }
-  &__image {
+  &__image {  text-align: center;
     width: 300px;
-    height: 300px;
     border-radius: 50%;
+    @media (max-width: 359px) {
+      width: 270px;
+    }
   }
   &__name {
     font-size: 48px;
@@ -125,6 +126,21 @@ section {
     margin: 6px 0px;
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----About---------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.about__paragraph {
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "Roboto", sans-serif;
+  text-indent: 30px;
+}
+
+/*-------------------------------------------------------------*/
+/*-----Skills--------------------------------------------------*/
+/*-------------------------------------------------------------*/
 
 .skills__item {
   line-height: 180%;
@@ -200,6 +216,10 @@ section {
   }
 }
 
+/*-------------------------------------------------------------*/
+/*-----Strengths-----------------------------------------------*/
+/*-------------------------------------------------------------*/
+
 .strengths__item {
   line-height: 180%;
   padding-left: 15px;
@@ -215,6 +235,7 @@ section {
 /*-------------------------------------------------------------*/
 /*-----Code example--------------------------------------------*/
 /*-------------------------------------------------------------*/
+
 .code-example__link {
   font-size: 24px;
   color: rgb(0, 0, 0);
@@ -256,6 +277,7 @@ section {
   @media (max-width: 460px) {
     width: 320px;
   }
+
 }
 
 .projects__item a {
@@ -277,16 +299,6 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-}
-
-/*-------------------------------------------------------------*/
-/*-------------------------------------------------------------*/
-/*-------------------------------------------------------------*/
-
-.text__link {
-  &:hover {
-    color: rgb(24, 27, 31);
-  }
 }
 
 /*-------------------------------------------------------------*/
