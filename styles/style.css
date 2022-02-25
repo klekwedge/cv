@@ -96,6 +96,13 @@ h6 {
   color: red;
 }
 
+/*-------------------------------------------------------------*/
+/*-----The Foundation------------------------------------------*/
+/*-------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 li {
   list-style-type: none;
   font-size: 16px;
@@ -126,27 +133,41 @@ code {
   font-size: 16px;
 }
 
+/*-------------------------------------------------------------*/
+/*-----Technical classes---------------------------------------*/
+/*-------------------------------------------------------------*/
 ._container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
 
+._title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+  margin: 6px 0px;
+}
+
+._link {
+  color: white;
+}
+
+._link:hover {
+  color: #13a34d;
+}
+
+/*-------------------------------------------------------------*/
+/*-----Header--------------------------------------------------*/
+/*-------------------------------------------------------------*/
 section {
   background-color: #e7e7e9;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 35px;
-}
-
-.title {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
-  margin: 6px 0px;
 }
 
 .text {
@@ -190,13 +211,13 @@ section {
 }
 
 .greetings__image {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 
 .greetings__name {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
@@ -204,7 +225,7 @@ section {
 }
 
 .greetings__qualification {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
@@ -218,7 +239,7 @@ section {
 
 .skills__html::before {
   content: "";
-  background: url("../img/html-5.png") no-repeat;
+  background: url("../assets/img/html-5.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -226,7 +247,7 @@ section {
 
 .skills__css::before {
   content: "";
-  background: url("../img/css-3.png") no-repeat;
+  background: url("../assets/img/css-3.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -234,7 +255,7 @@ section {
 
 .skills__sass::before {
   content: "";
-  background: url("../img/sass.png") no-repeat;
+  background: url("../assets/img/sass.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -242,7 +263,7 @@ section {
 
 .skills__js::before {
   content: "";
-  background: url("../img/js.png") no-repeat;
+  background: url("../assets/img/js.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -250,7 +271,7 @@ section {
 
 .skills__git::before {
   content: "";
-  background: url("../img/github-2.png") no-repeat;
+  background: url("../assets/img/github-2.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -258,7 +279,7 @@ section {
 
 .skills__vs::before {
   content: "";
-  background: url("../img/visual-studio.png") no-repeat;
+  background: url("../assets/img/visual-studio.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -266,7 +287,7 @@ section {
 
 .skills__figma::before {
   content: "";
-  background: url("../img/figma.png") no-repeat;
+  background: url("../assets/img/figma.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
@@ -279,16 +300,102 @@ section {
 
 .strengths__item::before {
   content: "";
-  background: url("../img/check-mark.png") no-repeat;
+  background: url("../assets/img/check-mark.png") no-repeat;
   font-size: 20px;
   padding-left: 30px;
   background-size: contain;
 }
 
+/*-------------------------------------------------------------*/
+/*-----Code example--------------------------------------------*/
+/*-------------------------------------------------------------*/
+.code-example__link {
+  font-size: 24px;
+  color: black;
+  display: none;
+}
+
+.code-example__link:hover {
+  color: #13a34d;
+}
+
+@media (max-width: 787px) {
+  .code-example__code {
+    display: none;
+  }
+  .code-example__link {
+    display: block;
+  }
+}
+
+/*-------------------------------------------------------------*/
+/*-----Projects------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.projects__title {
+  margin-bottom: 15px;
+}
+
+.projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px 20px;
+}
+
+.projects__item {
+  position: relative;
+}
+
+.projects__image {
+  width: 400px;
+  border-radius: 10px;
+}
+
+@media (max-width: 460px) {
+  .projects__image {
+    width: 320px;
+  }
+}
+
+.projects__item a:hover .projects__image {
+  -webkit-filter: brightness(0.6) drop-shadow(12px 12px 15px blue);
+          filter: brightness(0.6) drop-shadow(12px 12px 15px blue);
+}
+
+.projects__item a:hover .projects__subtitle {
+  display: block;
+}
+
+.projects__subtitle {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 .text__link:hover {
   color: #181b1f;
 }
 
+/*-------------------------------------------------------------*/
+/*-----Footer--------------------------------------------------*/
+/*-------------------------------------------------------------*/
 .footer {
   background-color: #181b1f;
   padding: 25px 0px;
@@ -296,28 +403,48 @@ section {
 }
 
 .footer__list {
+  padding: 0px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px 20px;
 }
 
-.link-white {
-  color: white;
+@media (max-width: 500px) {
+  .footer__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.link-white:hover {
-  color: #13a34d;
+.footer__list-contacts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
-.icon__image {
-  width: 45px;
-  height: 45px;
+.footer__list-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px 10px;
+}
+
+._icon {
+  width: 40px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
