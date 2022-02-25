@@ -103,6 +103,22 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0px;
+  background-color: #2f3742;
+}
+
+section {
+  background-color: #e7e7e9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 35px;
+}
+
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style-type: none;
   font-size: 16px;
@@ -110,17 +126,8 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
-ul {
-  padding-left: 0;
-}
-
 a {
   text-decoration: none;
-}
-
-body {
-  margin: 0px;
-  background-color: #2f3742;
 }
 
 pre {
@@ -163,19 +170,6 @@ code {
 /*-------------------------------------------------------------*/
 /*-----Header--------------------------------------------------*/
 /*-------------------------------------------------------------*/
-section {
-  background-color: #e7e7e9;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 35px;
-}
-
-.text {
-  font-size: 18px;
-  line-height: 150%;
-  font-family: "Roboto", sans-serif;
-}
-
 .header {
   background-color: #242930;
   padding: 15px 0px;
@@ -190,6 +184,7 @@ section {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 10px 20px;
 }
 
 .menu__link {
@@ -211,9 +206,15 @@ section {
 }
 
 .greetings__image {
+  text-align: center;
   width: 300px;
-  height: 300px;
   border-radius: 50%;
+}
+
+@media (max-width: 359px) {
+  .greetings__image {
+    width: 270px;
+  }
 }
 
 .greetings__name {
@@ -232,6 +233,19 @@ section {
   margin: 6px 0px;
 }
 
+/*-------------------------------------------------------------*/
+/*-----About---------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.about__paragraph {
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "Roboto", sans-serif;
+  text-indent: 30px;
+}
+
+/*-------------------------------------------------------------*/
+/*-----Skills--------------------------------------------------*/
+/*-------------------------------------------------------------*/
 .skills__item {
   line-height: 180%;
   padding-left: 15px;
@@ -293,6 +307,9 @@ section {
   background-size: contain;
 }
 
+/*-------------------------------------------------------------*/
+/*-----Strengths-----------------------------------------------*/
+/*-------------------------------------------------------------*/
 .strengths__item {
   line-height: 180%;
   padding-left: 15px;
@@ -384,13 +401,6 @@ section {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: none;
-}
-
-/*-------------------------------------------------------------*/
-/*-------------------------------------------------------------*/
-/*-------------------------------------------------------------*/
-.text__link:hover {
-  color: #181b1f;
 }
 
 /*-------------------------------------------------------------*/
