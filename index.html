@@ -100,9 +100,6 @@
                 <a href="#strengths" class="menu__link">Strengths</a>
               </li>
               <li class="menu__item">
-                <a href="#code-example" class="menu__link">Code example</a>
-              </li>
-              <li class="menu__item">
                 <a href="#projects" class="menu__link">Projects</a>
               </li>
               <li class="menu__item">
@@ -131,7 +128,7 @@
 
           <section class="main__about about">
             <h3 id="about" class="about__title _title">
-              ABOUT ME
+              About me
             </h3>
             <p class="about__paragraph _text">
               SPbPU student majoring in "System Analysis and Control",
@@ -177,32 +174,6 @@
             </ul>
           </section>
 
-          <section class="main__code-example code-example">
-            <h3 id="code-example" class="code-example__title _title">
-              Code example
-            </h3>
-            <pre class="code-example__code"><code>
-resetGame.addEventListener("click", function () {
-endGame.style.display = "none";
-              
-moveCounter = 0;
-moves.textContent = `Your moves: ${moveCounter}`;
-progressCounter = 0;
-              
-cards.forEach((card) => {
-  card.style.background = "linear-gradient(45deg, #fff1eb, #ace0f9)";
-  card.addEventListener("click", flipCard);
-  let randomPos = Math.floor(Math.random() * 20);
-  card.style.order = randomPos;
-});
-              </code></pre>
-            <a
-              class="code-example__link"
-              href="https://imgur.com/2MNkOYF"
-              target="_blank"
-              >Click to see sample code</a
-            >
-          </section>
 
           <section class="main__projects projects">
             <h3 id="projects" class="projects__title _title">Projects</h3>
