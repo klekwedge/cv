@@ -11,9 +11,10 @@
 [LinkedIn](https://www.linkedin.com/in/andrey-antonov-198197226/)
 
 ## Brief information about myself:
-My goal in this course is to gain all the necessary knowledge to successfully complete the RS-School (JS / FRONT-END) core course. I really enjoy doing site layout, thinking over the general structure of HTML markup, constantly learning something new and constantly improving my skills in the field of website creation. At the moment, I have no work experience.
+SPbPU student majoring in "System Analysis and Control", specialization "Theory and Mathematical Methods of System Analysis and Control in Technical, Economic and Social Systems" 2nd year student.
 
-My strengths: efficiency, punctuality, teamwork, responsibility, dedication, learning.
+
+I am interested in frontend development and I want to develop and work in this area. I enjoy designing websites, thinking about the overall structure of HTML markup, adding interactivity to website interfaces, constantly learning new things and constantly improving my skills in web development.
 
 ## Skills:
 * HTML5, CSS3 basics
@@ -22,15 +23,31 @@ My strengths: efficiency, punctuality, teamwork, responsibility, dedication, lea
 * VS Code
 * Figma
 
-## Code example:   
-```
-function multiply(a, b){
-  return a * b
-}
-```
+## Strengths:
+* Communicative
+* Teamwork
+* Hardworking
+* Punctual
+* Easily trained
+* Responsible
+* Purposeful
 
 ## Projects:
-[CV](https://github.com/klekkwedge/rsschool-cv)
+[CV](https://github.com/klekkwedge/my-cv/tree/rsschool-cv-html)
+
+[Photograph's portfolio ](https://github.com/klekkwedge/my-pet-projects/tree/photographer-portfolio)
+
+[Custom audio player](https://github.com/klekkwedge/my-pet-projects/tree/js30-1.2-audio-player)
+
+[Custom video player](https://github.com/klekkwedge/my-pet-projects/tree/js30-1.3-custom-video)
+
+[Image galery](https://github.com/klekkwedge/my-pet-projects/tree/js30-2.2-image-galery)
+
+[Movie app](https://github.com/klekkwedge/my-pet-projects/tree/js30-2.3-movie-app)
+
+[Memory game](https://github.com/klekkwedge/my-pet-projects/tree/js30-3.2-memory-game)
+
+[My first project](https://github.com/klekkwedge/my-first-project)
 
 ## Languages:
 English - A2 (Elementary)
