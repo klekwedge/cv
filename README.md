@@ -1,1 +1,1 @@
-https://klekkwedge.github.io/rsschool-cv/
+https://klekkwedge.github.io/my-cv/
