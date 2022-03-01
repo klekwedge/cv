@@ -13,7 +13,6 @@
 ## Brief information about myself:
 SPbPU student majoring in "System Analysis and Control", specialization "Theory and Mathematical Methods of System Analysis and Control in Technical, Economic and Social Systems" 2nd year student.
 
-
 I am interested in frontend development and I want to develop and work in this area. I enjoy designing websites, thinking about the overall structure of HTML markup, adding interactivity to website interfaces, constantly learning new things and constantly improving my skills in web development.
 
 ## Skills:
