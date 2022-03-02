@@ -199,16 +199,14 @@ code {
 
 .greetings {
   text-align: center;
-}
-
-.greetings__my-photo {
-  padding: 10px 0px;
+  padding: 30px 0px;
 }
 
 .greetings__image {
   text-align: center;
   width: 300px;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 359px) {
@@ -222,7 +220,7 @@ code {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
-  margin: 6px 0px;
+  margin-bottom: 5px;
 }
 
 .greetings__qualification {
@@ -230,7 +228,33 @@ code {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
-  margin: 6px 0px;
+  margin-bottom: 20px;
+}
+
+.greetings__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px 30px;
+}
+
+.greetings__button {
+  color: white;
+  padding: 20px 45px;
+  font-size: 22px;
+  background-color: #7e8ca1;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.greetings__button:hover {
+  background-color: #0f1b2b;
 }
 
 /*-------------------------------------------------------------*/
@@ -361,8 +385,8 @@ code {
 }
 
 .projects__item a:hover .projects__image {
-  -webkit-filter: brightness(0.6) drop-shadow(12px 12px 15px blue);
-          filter: brightness(0.6) drop-shadow(12px 12px 15px blue);
+  -webkit-filter: brightness(0.6) drop-shadow(12px 12px 15px #0000A6);
+          filter: brightness(0.6) drop-shadow(12px 12px 15px #0000A6);
 }
 
 .projects__item a:hover .projects__subtitle {
