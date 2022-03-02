@@ -25,7 +25,6 @@ ul {
   padding-left: 0;
 }
 
-
 li {
   list-style-type: none;
   font-size: 16px;
@@ -101,29 +100,46 @@ code {
 
 .greetings {
   text-align: center;
-  &__my-photo {
-    padding: 10px 0px;
-  }
-  &__image {  text-align: center;
+  padding: 30px 0px;
+  &__image {
+    text-align: center;
     width: 300px;
     border-radius: 50%;
     @media (max-width: 359px) {
       width: 270px;
     }
+    margin-bottom: 10px;
   }
   &__name {
     font-size: 48px;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
-    margin: 6px 0px;
+    margin-bottom: 5px;
   }
   &__qualification {
     font-size: 35px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
-    margin: 6px 0px;
+    margin-bottom: 20px;
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 30px;
+  }
+  &__button {
+    color: white;
+    padding: 20px 45px;
+    font-size: 22px;
+    background-color: #7e8ca1;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    &:hover {
+      background-color: #0f1b2b;
+    }
   }
 }
 
@@ -256,13 +272,12 @@ code {
   @media (max-width: 460px) {
     width: 320px;
   }
-
 }
 
 .projects__item a {
   &:hover {
     .projects__image {
-      filter: brightness(0.6) drop-shadow(12px 12px 15px blue);
+      filter: brightness(0.6) drop-shadow(12px 12px 15px #0000A6);
     }
     .projects__subtitle {
       display: block;
