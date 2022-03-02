@@ -23,13 +23,16 @@ I am interested in frontend development and I want to develop and work in this a
 * Figma
 
 ## Strengths:
-* Communicative
+
+* Communicable
 * Teamwork
 * Hardworking
 * Punctual
 * Easily trained
 * Responsible
 * Purposeful
+* Grammatically correct speech
+* Business conversation
 
 ## Projects:
 [CV](https://github.com/klekkwedge/my-cv/tree/rsschool-cv-html)
