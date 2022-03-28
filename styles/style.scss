@@ -37,15 +37,6 @@ a {
   text-decoration: none;
 }
 
-pre {
-  padding: 0px 20px 20px 20px;
-}
-code {
-  font-family: "Courier New", "Courier", monospace;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
 .material-icons{
   vertical-align: middle;
   margin-right: 5px;
@@ -71,6 +62,7 @@ code {
 
 ._link {
   color: white;
+  transition: 0.3s;
   &:hover {
     color: rgb(19, 163, 77);
   }
@@ -96,10 +88,6 @@ code {
   &__link {
     font-size: 22px;
     line-height: 150%;
-    color: white;
-    &:hover {
-      color: rgb(19, 163, 77);
-    }
   }
 }
 
