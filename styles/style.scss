@@ -71,6 +71,13 @@ a {
 body._lock {
   overflow: hidden;
 }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 /*-------------------------------------------------------------*/
 /*-----Header--------------------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -101,7 +108,7 @@ body._lock {
 
 .menu__icon {
   display: none;
-  margin:  0 0 0 auto;
+  margin: 0 0 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -190,6 +197,9 @@ body._lock {
   }
 }
 
+.main {
+  flex: 1 1 auto;
+}
 /*-------------------------------------------------------------*/
 /*-----Greetings-----------------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -241,7 +251,6 @@ body._lock {
 /*-------------------------------------------------------------*/
 /*-----About---------------------------------------------------*/
 /*-------------------------------------------------------------*/
-
 .about__paragraph {
   font-size: 18px;
   line-height: 150%;
@@ -252,6 +261,17 @@ body._lock {
 /*-------------------------------------------------------------*/
 /*-----Skills--------------------------------------------------*/
 /*-------------------------------------------------------------*/
+._anim-show {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .skills__item {
   line-height: 180%;
@@ -334,6 +354,15 @@ body._lock {
 .strengths__item {
   line-height: 180%;
   padding-left: 15px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 1.2s ease 0.5s;
+
+  &._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
   &::before {
     content: "";
     background: url("../assets/img/check-mark.png") no-repeat;
@@ -372,7 +401,7 @@ body._lock {
 .projects__item a {
   &:hover {
     .projects__image {
-      filter: brightness(0.6) drop-shadow(12px 12px 15px #0000a6);
+      filter: brightness(0.6);
     }
     .projects__subtitle {
       display: block;
@@ -418,11 +447,14 @@ body._lock {
 .footer__list-links {
   flex: 1 1 50%;
   display: flex;
-  gap: 10px 10px;
+  gap: 10px 15px;
 }
-// filter: brightness(0.6) drop-shadow(12px 12px 15px blue);
 
 ._icon {
   width: 40px;
   height: 40px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
