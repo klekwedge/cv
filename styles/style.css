@@ -97,6 +97,9 @@ h6 {
 }
 
 /*-------------------------------------------------------------*/
+/*-----Variable declaration------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
 html {
@@ -105,8 +108,10 @@ html {
 
 body {
   margin: 0px;
-  background-color: #2f3742;
   font-family: "Roboto", sans-serif;
+  background-color: #2f3742;
+  color: #000000;
+  font-size: 18px;
 }
 
 section {
@@ -159,6 +164,7 @@ a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-size: 18px;
 }
 
 ._link:hover {
@@ -589,6 +595,14 @@ body._lock {
   display: -ms-flexbox;
   display: flex;
   gap: 10px 15px;
+}
+
+.footer__copyright {
+  margin-bottom: 15px;
+  margin: 25px auto 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 ._icon {

@@ -3,6 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
 /*-------------------------------------------------------------*/
+/*-----Variable declaration------------------------------------*/
+/*-------------------------------------------------------------*/
+$white-color: #ffffff;
+$black-color: #000000;
+$gray-color: rgb(47, 55, 66);
+
+/*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
 html {
@@ -11,12 +18,14 @@ html {
 
 body {
   margin: 0px;
-  background-color: rgb(47, 55, 66); //rgb(229, 229, 229); ; //#4A90E2;
   font-family: "Roboto", sans-serif;
+  background-color: $gray-color; //#4A90E2;
+  color: $black-color;
+  font-size: 18px;
 }
 
 section {
-  background-color: #e7e7e9; //rgb(255, 255, 255);
+  background-color: #e7e7e9;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 35px;
@@ -63,6 +72,7 @@ a {
 ._link {
   color: white;
   transition: 0.3s;
+  font-size: 18px;
   &:hover {
     color: rgb(19, 163, 77);
   }
@@ -441,13 +451,23 @@ body._lock {
     justify-content: center;
   }
 }
+
 .footer__list-contacts {
   flex: 1 1 50%;
 }
+
 .footer__list-links {
   flex: 1 1 50%;
   display: flex;
   gap: 10px 15px;
+}
+
+.footer__copyright{
+  margin-bottom: 15px;
+  margin: 25px auto 0 auto;
+  text-align: center;
+  color: $white-color;
+  font-size: 18px;
 }
 
 ._icon {
