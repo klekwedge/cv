@@ -188,6 +188,42 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
+/*-----Scroll animation----------------------------------------*/
+/*-------------------------------------------------------------*/
+._anim-show {
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+  -webkit-transition: all 1.2s ease 0.5s;
+  transition: all 1.2s ease 0.5s;
+}
+
+._anim-show-2 {
+  -webkit-transform: translate(-120%, 0);
+          transform: translate(-120%, 0);
+  opacity: 0;
+  -webkit-transition: all 1.2s ease 0s;
+  transition: all 1.2s ease 0s;
+}
+
+._anim-show-3 {
+  -webkit-transform: translate(120%, 0);
+          transform: translate(120%, 0);
+  opacity: 0;
+  -webkit-transition: all 1.2s ease 0s;
+  transition: all 1.2s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show, ._anim-show-2._active,
+._active ._anim-show-2, ._anim-show-3._active,
+._active ._anim-show-3 {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+/*-------------------------------------------------------------*/
 /*-----Header--------------------------------------------------*/
 /*-------------------------------------------------------------*/
 .header {
@@ -386,21 +422,6 @@ body._lock {
 /*-------------------------------------------------------------*/
 /*-----Skills--------------------------------------------------*/
 /*-------------------------------------------------------------*/
-._anim-show {
-  -webkit-transform: translate(0, 120%);
-          transform: translate(0, 120%);
-  opacity: 0;
-  -webkit-transition: all 1.2s ease 0s;
-  transition: all 1.2s ease 0s;
-}
-
-._anim-show._active,
-._active ._anim-show {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  opacity: 1;
-}
-
 .skills__item {
   line-height: 180%;
   padding-left: 15px;
