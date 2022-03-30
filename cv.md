@@ -6,7 +6,7 @@
 
 **Telegram:** @username
 
-**Discord:** Andrey (@klekkwedge)
+**Discord:** Andrey (@klekwedge)
 
 [LinkedIn](https://www.linkedin.com/in/andrey-antonov-198197226/)
 
