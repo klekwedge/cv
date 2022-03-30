@@ -1,3 +1,3 @@
-https://klekkwedge.github.io/my-cv/
+This is my resume repository.
 
-https://klekkwedge.github.io/my-cv/cv
+https://klekwedge.github.io/my-cv/
