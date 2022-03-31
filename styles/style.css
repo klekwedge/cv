@@ -208,8 +208,8 @@ body._lock {
   -webkit-transform: translate(0, 120%);
           transform: translate(0, 120%);
   opacity: 0;
-  -webkit-transition: all 1.2s ease 0.5s;
-  transition: all 1.2s ease 0.5s;
+  -webkit-transition: all 1s ease 0.2s;
+  transition: all 1s ease 0.2s;
 }
 
 ._anim-show-2 {
@@ -244,7 +244,24 @@ body._lock {
 /*-------------------------------------------------------------*/
 .header {
   background-color: #242930;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px 0px;
+}
+
+.menu__logo {
+  width: 180px;
+  cursor: pointer;
 }
 
 .menu__list {
@@ -259,7 +276,7 @@ body._lock {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 10px 20px;
+  gap: 10px 30px;
 }
 
 .menu__link {
@@ -275,7 +292,11 @@ body._lock {
   margin: 0 0 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1050px) {
+  .menu__logo {
+    z-index: 5;
+    position: relative;
+  }
   .menu__icon {
     z-index: 5;
     display: block;
@@ -332,7 +353,7 @@ body._lock {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 100px 30px 30px 30px;
+    padding: 140px 30px 30px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
     overflow: auto;
@@ -340,26 +361,41 @@ body._lock {
   .menu__body._active {
     left: 0;
   }
+  .menu__body._active::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background: #000000;
+  }
+  .menu__body {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px 0px;
+  }
   .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px 20px;
+    gap: 20px 0px;
+    font-size: 35px;
+  }
+  .menu__contacts {
+    font-size: 35px;
   }
   .menu__item {
     margin: 0 auto;
     text-align: center;
   }
   .menu__link {
-    font-size: 35px;
+    font-size: 30px;
   }
-}
-
-.main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 /*-------------------------------------------------------------*/
