@@ -149,7 +149,7 @@ body._lock {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
 }
 .menu {
@@ -170,7 +170,6 @@ body._lock {
     line-height: 150%;
   }
 }
-
 
 /*-------------------------------------------------------------*/
 /*-----Burger--------------------------------------------------*/
@@ -506,18 +505,24 @@ body._lock {
 }
 .projects__item {
   position: relative;
+  @media (max-width: 1080) {
+    width: 100%;
+  }
 }
 
 .projects__image {
-  //flex: 1 1 33%;
-  width: 400px;
+  width: 500px;
   border-radius: 10px;
-  @media (max-width: 460px) {
-    width: 320px;
+  @media (max-width: 1080px) {
+    width: 700px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
 
 .projects__item a {
+  transition: 0.3s;
   &:hover {
     .projects__image {
       filter: brightness(0.6);
@@ -527,6 +532,7 @@ body._lock {
     }
   }
 }
+
 .projects__subtitle {
   font-size: 20px;
   text-align: center;

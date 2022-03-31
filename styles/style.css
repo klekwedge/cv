@@ -256,7 +256,7 @@ body._lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 
 .menu__logo {
@@ -633,15 +633,32 @@ body._lock {
   position: relative;
 }
 
+@media (max-width: 1080) {
+  .projects__item {
+    width: 100%;
+  }
+}
+
 .projects__image {
-  width: 400px;
+  width: 500px;
   border-radius: 10px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1080px) {
   .projects__image {
-    width: 320px;
+    width: 700px;
   }
+}
+
+@media (max-width: 768px) {
+  .projects__image {
+    width: 100%;
+  }
+}
+
+.projects__item a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .projects__item a:hover .projects__image {
