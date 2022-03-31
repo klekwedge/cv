@@ -19,14 +19,15 @@ html {
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  background-color: $gray-color; //#4A90E2;
-  color: $black-color;
+  background-color: $gray-color;
+  background-color: #324851;
+
+  // background-color: rgb(10,25,47);
+  color: $white-color;
   font-size: 18px;
 }
 
 section {
-  background-color: #e7e7e9;
-  border-radius: 10px;
   padding: 15px;
   margin-bottom: 35px;
 }
@@ -62,11 +63,21 @@ a {
 }
 
 ._title {
-  font-size: 24px;
+  // font-size: 26px;
+  font-size: 40px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
-  margin: 6px 0px 16px 0px;
+  //   line-height: 200%;
+  background: #324851 no-repeat;
+  padding: 5px 15px;
+}
+
+._heading {
+  margin: 0px 0px 60px 0px;
+  background: url(../assets/img/section-title-line.png) no-repeat center;
+  display: flex;
+  justify-content: center;
 }
 
 ._link {
@@ -363,9 +374,6 @@ body._lock {
       flex-wrap: wrap;
       justify-content: center;
     }
-  }
-
-  &__photo {
   }
 
   &__image {
