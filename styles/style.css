@@ -550,6 +550,8 @@ body._lock {
 
 .skills__image {
   max-width: 150px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -580,6 +582,8 @@ body._lock {
 
 .strengths__image {
   max-width: 150px;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
