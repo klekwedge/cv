@@ -78,6 +78,10 @@ a {
   background: url(../assets/img/section-title-line.png) no-repeat center;
   display: flex;
   justify-content: center;
+  @media (max-width: 425px) {
+    background: none;
+
+  }
 }
 
 ._link {
@@ -398,79 +402,27 @@ body._lock {
 /*-------------------------------------------------------------*/
 /*-----Skills--------------------------------------------------*/
 /*-------------------------------------------------------------*/
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 40px;
+}
 
+.skills__item {
+}
+
+.skills__image {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+.skills__subtitle {
+  text-align: center;
+  font-size: 18px;
+}
 .skills__item {
   line-height: 180%;
   padding-left: 15px;
-}
-.skills__html {
-  &::before {
-    content: "";
-    background: url("../assets/img/html-5.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
-}
-
-.skills__css {
-  &::before {
-    content: "";
-    background: url("../assets/img/css-3.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
-}
-
-.skills__sass {
-  &::before {
-    content: "";
-    background: url("../assets/img/sass.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
-}
-
-.skills__js {
-  &::before {
-    content: "";
-    background: url("../assets/img/js.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
-}
-
-.skills__git {
-  &::before {
-    content: "";
-    background: url("../assets/img/github-2.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
-}
-
-.skills__vs {
-  &::before {
-    content: "";
-    background: url("../assets/img/visual-studio.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
-}
-
-.skills__figma {
-  &::before {
-    content: "";
-    background: url("../assets/img/figma.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
-  }
 }
 
 /*-------------------------------------------------------------*/
