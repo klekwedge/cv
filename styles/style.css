@@ -566,9 +566,29 @@ body._lock {
 /*-------------------------------------------------------------*/
 /*-----Strengths-----------------------------------------------*/
 /*-------------------------------------------------------------*/
+.strengths__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px 40px;
+}
+
+.strengths__image {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+
+.strengths__subtitle {
+  text-align: center;
+  font-size: 18px;
+}
+
 .strengths__item {
-  line-height: 180%;
-  padding-left: 15px;
   -webkit-transform: translate(0px, 120%);
           transform: translate(0px, 120%);
   opacity: 0;
@@ -580,14 +600,6 @@ body._lock {
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   opacity: 1;
-}
-
-.strengths__item::before {
-  content: "";
-  background: url("../assets/img/check-mark.png") no-repeat;
-  font-size: 20px;
-  padding-left: 30px;
-  background-size: contain;
 }
 
 /*-------------------------------------------------------------*/

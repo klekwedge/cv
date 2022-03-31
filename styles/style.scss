@@ -80,7 +80,6 @@ a {
   justify-content: center;
   @media (max-width: 425px) {
     background: none;
-
   }
 }
 
@@ -429,9 +428,25 @@ body._lock {
 /*-----Strengths-----------------------------------------------*/
 /*-------------------------------------------------------------*/
 
+.strengths__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 40px;
+}
+
 .strengths__item {
-  line-height: 180%;
-  padding-left: 15px;
+}
+
+.strengths__image {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+.strengths__subtitle {
+  text-align: center;
+  font-size: 18px;
+}
+.strengths__item {
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1.2s ease 0.5s;
@@ -439,14 +454,6 @@ body._lock {
   &._active {
     transform: translate(0px, 0px);
     opacity: 1;
-  }
-
-  &::before {
-    content: "";
-    background: url("../assets/img/check-mark.png") no-repeat;
-    font-size: 20px;
-    padding-left: 30px;
-    background-size: contain;
   }
 }
 
