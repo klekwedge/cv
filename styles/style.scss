@@ -55,7 +55,7 @@ a {
 /*-------------------------------------------------------------*/
 
 ._container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: content-box;
@@ -89,7 +89,17 @@ body._lock {
   flex-direction: column;
 }
 
-
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
 /*-------------------------------------------------------------*/
 /*-----Scroll animation----------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -118,14 +128,14 @@ body._lock {
 }
 
 ._anim-show._active,
-._active ._anim-show,._anim-show-2._active,
-._active ._anim-show-2,._anim-show-3._active,
+._active ._anim-show,
+._anim-show-2._active,
+._active ._anim-show-2,
+._anim-show-3._active,
 ._active ._anim-show-3 {
   transform: translate(0px, 0px);
   opacity: 1;
 }
-
-
 
 /*-------------------------------------------------------------*/
 /*-----Header--------------------------------------------------*/
@@ -135,7 +145,6 @@ body._lock {
   background-color: rgb(36, 41, 48);
   // #495e70; //#4c6071;
   padding: 15px 0px;
-  margin-bottom: 15px;
 }
 .menu {
   &__list {
@@ -217,6 +226,7 @@ body._lock {
 
   .menu__body {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: -100%;
     width: 100%;
@@ -253,17 +263,25 @@ body._lock {
 /*-----Greetings-----------------------------------------------*/
 /*-------------------------------------------------------------*/
 .greetings {
-  text-align: center;
-  padding: 30px 0px;
-  &__image {
-    text-align: center;
-    width: 300px;
-    border-radius: 50%;
-    @media (max-width: 359px) {
-      width: 270px;
-    }
-    margin-bottom: 10px;
+  position: relative;
+  // padding: 280px 0px;
+  padding: 180px 0px 280px 0px;
+  color: white;
+  
+  &__container {
+    position: relative;
+    z-index: 2;
   }
+
+  &__image {
+    filter: brightness(0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
   &__name {
     font-size: 48px;
     font-weight: 700;
@@ -281,7 +299,6 @@ body._lock {
   &__buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px 30px;
   }
   &__button {
@@ -297,6 +314,21 @@ body._lock {
   }
 }
 
+@media (max-width: 1370px) {
+  .greetings__image img {
+    object-position: 80% 80%;
+  }
+}
+
+// &__image {
+//   text-align: center;
+//   width: 300px;
+//   border-radius: 50%;
+//   @media (max-width: 359px) {
+//     width: 270px;
+//   }
+//   margin-bottom: 10px;
+// }
 /*-------------------------------------------------------------*/
 /*-----About---------------------------------------------------*/
 /*-------------------------------------------------------------*/
@@ -490,7 +522,7 @@ body._lock {
   gap: 10px 15px;
 }
 
-.footer__copyright{
+.footer__copyright {
   margin-bottom: 15px;
   margin: 25px auto 0 auto;
   text-align: center;
