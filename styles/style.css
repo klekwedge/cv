@@ -158,6 +158,7 @@ a {
   line-height: 150%;
   background: #324851 no-repeat;
   padding: 5px 15px;
+  text-align: center;
 }
 
 ._heading {
@@ -309,7 +310,7 @@ body._lock {
   margin: 0 0 0 auto;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 800px) {
   .menu__logo {
     z-index: 5;
     position: relative;
@@ -416,7 +417,7 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Greetings-----------------------------------------------*/
+/*-----Greetings------------------------------------------ ----*/
 /*-------------------------------------------------------------*/
 .greetings {
   position: relative;
@@ -445,6 +446,7 @@ body._lock {
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
   margin-bottom: 5px;
+  max-width: 650px;
 }
 
 .greetings__qualification {
@@ -466,6 +468,7 @@ body._lock {
 
 .greetings__button {
   color: white;
+  min-width: 290px;
   padding: 20px 45px;
   font-size: 22px;
   background-color: #7e8ca1;
@@ -476,6 +479,13 @@ body._lock {
 
 .greetings__button:hover {
   background-color: #0f1b2b;
+}
+
+@media (max-width: 400px) {
+  .greetings__button {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1370px) {

@@ -71,6 +71,7 @@ a {
   //   line-height: 200%;
   background: #324851 no-repeat;
   padding: 5px 15px;
+  text-align: center;
 }
 
 ._heading {
@@ -194,7 +195,7 @@ body._lock {
   margin: 0 0 0 auto;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 800px) {
   .menu__logo {
     z-index: 5;
     position: relative;
@@ -306,7 +307,7 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Greetings-----------------------------------------------*/
+/*-----Greetings------------------------------------------ ----*/
 /*-------------------------------------------------------------*/
 .greetings {
   position: relative;
@@ -333,7 +334,9 @@ body._lock {
     font-family: "Montserrat", sans-serif;
     line-height: 150%;
     margin-bottom: 5px;
+    max-width: 650px;
   }
+
   &__qualification {
     font-size: 35px;
     font-weight: 500;
@@ -341,6 +344,7 @@ body._lock {
     line-height: 150%;
     margin-bottom: 20px;
   }
+
   &__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -348,6 +352,7 @@ body._lock {
   }
   &__button {
     color: white;
+    min-width: 290px;
     padding: 20px 45px;
     font-size: 22px;
     background-color: #7e8ca1;
@@ -355,6 +360,10 @@ body._lock {
     transition: all 0.3s ease-in;
     &:hover {
       background-color: #0f1b2b;
+    }
+    @media (max-width: 400px) {
+      text-align: center;
+      width: 100%;
     }
   }
 }
@@ -414,7 +423,7 @@ body._lock {
 .skills__image {
   max-width: 150px;
   display: block;
-  margin:  0 auto;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .skills__subtitle {
@@ -443,7 +452,7 @@ body._lock {
 .strengths__image {
   max-width: 150px;
   display: block;
-  margin:  0 auto;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .strengths__subtitle {

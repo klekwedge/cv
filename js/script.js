@@ -2,9 +2,8 @@
 
 // TypeIt
 new TypeIt("#printAnimation", {
-  strings: "Hi, I'm Andrey 👋",
+  strings: "Привет, меня зовут Андрей 👋",
 }).go();
-
 // Burger
 const iconMenu = document.querySelector(".menu__icon");
 const menuBody = document.querySelector(".menu__body");
@@ -31,7 +30,6 @@ menuLinks.forEach((item) => {
 // Scroll animation
 
 const animItems = document.querySelectorAll("._anim-item");
-console.log(animItems);
 if (animItems.length > 0) {
   animOnScroll();
   window.addEventListener("scroll", animOnScroll);
@@ -55,7 +53,7 @@ function animOnScroll() {
     ) {
       animItem.classList.add("_active");
     } else {
-    //   animItem.classList.remove("_active");
+      //   animItem.classList.remove("_active");
     }
   }
 }
@@ -66,3 +64,4 @@ function offset(el) {
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
 }
+
