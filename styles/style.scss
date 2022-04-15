@@ -20,7 +20,9 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   // background-color: $gray-color;
-  background-color: #324851;
+  // background-color: #324851;
+  background-color: #335252;
+
   color: $white-color;
   font-size: 18px;
 }
@@ -67,7 +69,7 @@ a {
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
   //   line-height: 200%;
-  background: #324851 no-repeat;
+  background: #335252 no-repeat;
   padding: 5px 15px;
   text-align: center;
 }
@@ -117,35 +119,43 @@ body._lock {
 /*-----Scroll animation----------------------------------------*/
 /*-------------------------------------------------------------*/
 
-/// 1
-._anim-show {
+/// Slides bottom
+._anim-slides-bottom {
   transform: translate(0, 120%);
   opacity: 0;
   transition: all 1s ease 0.2s;
 }
 
-/// 2
+/// Slides left
 
-._anim-show-2 {
+._anim-slides-left {
   transform: translate(-120%, 0);
   opacity: 0;
   transition: all 1.2s ease 0s;
 }
 
-/// 3
+/// Slides right
 
-._anim-show-3 {
+._anim-slides-right {
   transform: translate(120%, 0);
   opacity: 0;
   transition: all 1.2s ease 0s;
 }
 
-._anim-show._active,
-._active ._anim-show,
-._anim-show-2._active,
-._active ._anim-show-2,
-._anim-show-3._active,
-._active ._anim-show-3 {
+/// Slides right
+
+._anim-slides-right {
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 1.2s ease 0s;
+}
+
+._anim-slides-bottom._active,
+._active ._anim-slides-bottom,
+._anim-slides-left._active,
+._active ._anim-slides-left,
+._anim-slides-right._active,
+._active ._anim-slides-right {
   transform: translate(0px, 0px);
   opacity: 1;
 }
@@ -327,6 +337,7 @@ body._lock {
   }
 
   &__name {
+    min-height: 150px;
     max-width: 650px;
     margin-bottom: 5px;
     font-size: 48px;
@@ -479,23 +490,27 @@ body._lock {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px 20px;
+  gap: 30px 20px;
 }
+
 .projects__item {
   display: flex;
   flex-direction: column;
-  background-color: #7ca3a0;
+  background-color: #d4dde1;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px 0px 10px 0px;
+
   @media (max-width: 1080) {
     width: 100%;
   }
 }
 
+
+
 .projects__image {
   width: 500px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   @media (max-width: 1080px) {
     width: 700px;
   }
@@ -531,7 +546,7 @@ body._lock {
 .projects__name {
   font-size: 20px;
   text-align: center;
-  color: whitesmoke;
+  color: #2d3033;
 }
 
 /*-------------------------------------------------------------*/
