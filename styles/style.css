@@ -575,7 +575,7 @@ body._lock {
 
 .skills__subtitle {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .skills__item {
@@ -607,7 +607,7 @@ body._lock {
 
 .strengths__subtitle {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .strengths__item {
@@ -667,7 +667,7 @@ body._lock {
 
 .projects__image {
   width: 500px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border-radius: 10px 10px 0px 0px;
 }
 
