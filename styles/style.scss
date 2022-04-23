@@ -64,15 +64,14 @@ a {
 }
 
 ._title {
-  // font-size: 26px;
   font-size: 40px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
-  //   line-height: 200%;
   background: #335252 no-repeat;
   padding: 5px 15px;
   text-align: center;
+  position: relative;
 }
 
 ._heading {
@@ -116,7 +115,6 @@ body._lock {
   top: 0;
   object-fit: cover;
 }
-
 
 /*-------------------------------------------------------------*/
 /*-----Header--------------------------------------------------*/
@@ -385,7 +383,6 @@ body._lock {
 }
 
 .skills__item {
-
 }
 
 .skills__image {
@@ -463,8 +460,6 @@ body._lock {
     width: 100%;
   }
 }
-
-
 
 .projects__image {
   width: 500px;
