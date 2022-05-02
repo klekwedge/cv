@@ -1,5 +1,5 @@
-@import "_nullstyle";
-@import "_animation";
+@import "./modules/_nullstyle";
+@import "./modules/_animation";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
@@ -387,6 +387,7 @@ body._lock {
 
 .skills__image {
   max-width: 150px;
+  max-height: 150px;
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
