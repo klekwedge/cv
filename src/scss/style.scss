@@ -315,17 +315,28 @@ body._lock {
     flex-wrap: wrap;
     gap: 20px 30px;
   }
+
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
     color: white;
     min-width: 290px;
-    padding: 20px 45px;
+    padding: 20px 30px;
     font-size: 22px;
     background-color: #7e8ca1;
     border-radius: 10px;
     transition: all 0.3s ease-in;
+
+    & img {
+      width: 35px;
+      height: 35px;
+    }
     &:hover {
       background-color: #0f1b2b;
     }
+
     @media (max-width: 400px) {
       text-align: center;
       width: 100%;
@@ -481,13 +492,13 @@ body._lock {
     .projects__image {
       filter: brightness(0.6);
     }
-    span {
+    .projects__icon {
       display: block;
     }
   }
 }
 
-.projects__item span {
+.projects__icon {
   font-size: 35px;
   text-align: center;
   color: white;
