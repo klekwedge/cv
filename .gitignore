@@ -105,6 +105,5 @@ typings/
 
 
 # Assembly
-gulp
-gulpfile.js
+webpack.config.js
 package-lock.json
