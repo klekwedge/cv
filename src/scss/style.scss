@@ -461,26 +461,32 @@ body._lock {
 
 .projects__item {
   display: flex;
+  flex: 1 1 30%;
   flex-direction: column;
   background-color: #d4dde1;
   border-radius: 10px;
   padding: 0px 0px 10px 0px;
 
-  @media (max-width: 1080) {
-    width: 100%;
+  @media (max-width: 1024px) {
+    flex: 1 1 40%;
+  }
+
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
   }
 }
 
 .projects__image {
-  width: 500px;
+  // width: 500px;
   margin-bottom: 15px;
   border-radius: 10px 10px 0px 0px;
-  @media (max-width: 1080px) {
-    width: 700px;
-  }
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+  width: 100%;
+  // @media (max-width: 1080px) {
+  //   width: 700px;
+  // }
+  // @media (max-width: 768px) {
+  //   width: 100%;
+  // }
 }
 
 .projects__item a {
