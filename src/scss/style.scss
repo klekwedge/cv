@@ -130,8 +130,17 @@ body._lock {
 }
 .menu {
   &__logo {
-    width: 180px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & span {
+      font-weight: 700;
+      font-size: 20px;
+      display: block;
+      background-color: $complementary-color;
+      padding: 10px 12px;
+      border-radius: 50%;
+    }
   }
 
   &__list {
@@ -325,7 +334,7 @@ body._lock {
     padding: 5px 20px;
     font-size: 20px;
     border-radius: 30px;
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease;
     background: #333333;
 
     &:first-child {
@@ -339,7 +348,7 @@ body._lock {
       border: 2px solid $white-color;
 
       & img {
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
         padding: 5px;
       }
 
