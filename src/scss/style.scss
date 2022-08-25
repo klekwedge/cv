@@ -7,6 +7,10 @@
 $white-color: #ffffff;
 $black-color: #000000;
 $gray-color: rgb(47, 55, 66);
+$complementary-color: #007ced;
+$dark-light-color: #222222;
+$dark-light-color-2: #333333;
+
 
 /*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
@@ -18,10 +22,7 @@ html {
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
-  // background-color: $gray-color;
-  // background-color: #324851;
-  background-color: #335252;
-
+  background-color: $dark-light-color;
   color: $white-color;
   font-size: 18px;
 }
@@ -66,7 +67,7 @@ a {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   line-height: 150%;
-  background: #335252 no-repeat;
+  background: $dark-light-color no-repeat;
   padding: 5px 15px;
   text-align: center;
   position: relative;
@@ -87,7 +88,7 @@ a {
   transition: 0.3s;
   font-size: 18px;
   &:hover {
-    color: rgb(19, 163, 77);
+    color: $complementary-color;
   }
 }
 
@@ -119,8 +120,7 @@ body._lock {
 /*-------------------------------------------------------------*/
 
 .header {
-  background-color: rgb(36, 41, 48);
-  // #495e70; //#4c6071;
+  background-color: $dark-light-color;
 
   &__menu {
     display: flex;
@@ -322,19 +322,43 @@ body._lock {
     align-items: center;
     gap: 0px 10px;
     color: white;
-    min-width: 290px;
-    padding: 20px 30px;
-    font-size: 22px;
-    background-color: #7e8ca1;
-    border-radius: 10px;
+    min-width: 240px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 30px;
     transition: all 0.3s ease-in;
+    background: #333333;
+
+    &:first-child {
+      border: 2px solid $complementary-color;
+      &:hover {
+        background-color: $complementary-color;
+      }
+    }
+
+    &:nth-child(2) {
+      border: 2px solid $white-color;
+
+      & img {
+        transition: all 0.5s ease;
+        padding: 5px;
+      }
+
+      &:hover {
+        background-color: $white-color;
+        color: $black-color;
+
+        & img {
+          border-radius: 50%;
+          background-color: $dark-light-color;
+        }
+      }
+    }
 
     & img {
       width: 35px;
       height: 35px;
-    }
-    &:hover {
-      background-color: #0f1b2b;
+      box-sizing: content-box;
     }
 
     @media (max-width: 400px) {
@@ -465,7 +489,8 @@ body._lock {
   display: flex;
   flex: 1 1 30%;
   flex-direction: column;
-  background-color: #d4dde1;
+  background-color: $dark-light-color-2;
+  color: $white-color;
   border-radius: 10px;
   padding: 0px 0px 10px 0px;
 
@@ -479,16 +504,9 @@ body._lock {
 }
 
 .projects__image {
-  // width: 500px;
   margin-bottom: 15px;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  // @media (max-width: 1080px) {
-  //   width: 700px;
-  // }
-  // @media (max-width: 768px) {
-  //   width: 100%;
-  // }
 }
 
 .projects__item a {
@@ -518,7 +536,6 @@ body._lock {
 .projects__name {
   font-size: 20px;
   text-align: center;
-  color: #2d3033;
 }
 
 /*-------------------------------------------------------------*/
