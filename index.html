@@ -22,9 +22,9 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220706153412" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220825221112" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap&_v=20220706153412"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500;700&display=swap&_v=20220825221112"
     rel="stylesheet">
 </head>
 
@@ -33,7 +33,10 @@
     <header class="header">
       <div class="header__container _container">
         <div class="header__menu menu">
-          <a href="https://github.com/klekwedge" target="_blank"><picture><source srcset="assets/img/logo.webp" type="image/webp"><img class='menu__logo' src="assets/img/logo.png"></picture></a>
+          <h1 class="menu__logo">
+            <span>A</span>
+            Andrey Antonov
+          </h1>
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item">
@@ -61,8 +64,8 @@
 
       <section class="main__greetings greetings">
         <div class="greetings__container _container">
-          <h1 class="greetings__name" id="printAnimation"></h1>
-          <h2 class="greetings__qualification _anim-item text-focus-in">Front-End разработчик</h2>
+          <h2 class="greetings__name" id="printAnimation"></h2>
+          <h3 class="greetings__qualification _anim-item text-focus-in">Front-End разработчик</h3>
           <div class="greetings__buttons">
             <a class="greetings__button" href="mailto:antonov.andrey.10101@gmail.com"><img
                 src="./assets/svg/mail-icon.svg"> Напишите мне</a>
@@ -83,20 +86,20 @@
           </div>
           <div class="about__content">
             <div class="about__photo _anim-item">
-              <picture><source srcset="assets/img/personal-photo.webp" type="image/webp"><img class="about__image flip-in-hor-bottom" src="assets/img/personal-photo.jpg" alt="My personal photo" /></picture>
+              <img class="about__image flip-in-hor-bottom" src="assets/img/personal-photo.jpg"
+                alt="My personal photo" />
             </div>
             <div class="about__text _anim-item">
               <p class="about__paragraph _text _anim-slides-bottom">
-                Студент СПбПУ на направлении «Системный анализ и управление», специализация
-                «Теория и математические методы системного анализа и управления в технических,
-                экономичеcких и социальных системах» 2 курс.
+                Студент СПбПУ на направлении «Системный анализ и управление», специализация «Теория и математические
+                методы системного анализа и управления в технических, экономичеcких и социальных системах». Перешел на 3
+                курс. На 1 курсе программировал на C++, на 2 курсе был опыт программирования на Python.
               </p>
               <br />
               <p class="about__paragraph _text _anim-slides-bottom">
-                Заинтересован в frontend разработке и хочу развиваться и работать в этой сфере. Мне
-                нравится создавать верстку сайтов, продумывать общую структуру HTML-разметки, стилизовать элементы,
-                добавлять интерактивность интерфейсам сайта и программировать, постоянно узнавать что-то новое и
-                улучшать свои навыки в web-разработке.
+                Заинтересован в frontend разработке и хочу развиваться и работать в этой сфере. Мне нравится заниматься
+                версткой сайтов, продумывать общую структуру HTML-разметки, добавлять интерактивность интерфейсам сайта,
+                постоянно узнавать что-то новое и постоянно повышать свои навыки в web-разработке.
               </p>
             </div>
           </div>
@@ -116,50 +119,65 @@
               <h4 class="skills__subtitle shake-horizontal">CSS3</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/sass.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/sass.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/sass.svg">
               <h4 class="skills__subtitle">SASS / SCSS</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/js.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/js.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/tailwindcss.svg">
+              <h4 class="skills__subtitle">Tailwind CSS</h4>
+            </li>
+            <li class="skills__item _anim-slides-bottom">
+              <img class="skills__image" src="assets/svg/skills/javascript.svg">
               <h4 class="skills__subtitle">JavaScript</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/typescript.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/typescript.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/typescrip.svg">
               <h4 class="skills__subtitle">TypeScript</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/python.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/python.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/python.svg">
               <h4 class="skills__subtitle">Python</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/git.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/git.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/git.svg">
               <h4 class="skills__subtitle">Git</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/github.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/github.png"></picture>
+              <img class="skills__image" src="assets/svg/github.svg">
               <h4 class="skills__subtitle">GitHub</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/gitlab.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/gitlab.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/gitlab.svg">
               <h4 class="skills__subtitle">GitLab</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/webpack.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/webpack.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/webpack.svg">
               <h4 class="skills__subtitle">Webpack basics</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/gulp.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/gulp.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/gulp.svg">
               <h4 class="skills__subtitle">Gulp basics</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/chartjs.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/chartjs.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/chartjs.svg">
               <h4 class="skills__subtitle">Chart.js basics</h4>
             </li>
             <li class="skills__item _anim-slides-bottom">
-              <picture><source srcset="assets/img/skills/figma.webp" type="image/webp"><img class="skills__image" src="assets/img/skills/figma.png"></picture>
+              <img class="skills__image" src="assets/svg/skills/figma.svg">
               <h4 class="skills__subtitle">Figma</h4>
             </li>
-
+            <li class="skills__item _anim-slides-bottom">
+              <img class="skills__image" src="assets/svg/skills/react.svg">
+              <h4 class="skills__subtitle">React</h4>
+            </li>
+            <li class="skills__item _anim-slides-bottom">
+              <img class="skills__image" src="assets/svg/skills/redux.svg">
+              <h4 class="skills__subtitle">Redux</h4>
+            </li>
+            <li class="skills__item _anim-slides-bottom">
+              <img class="skills__image" src="assets/svg/skills/redux.svg">
+              <h4 class="skills__subtitle">Redux Toolkit</h4>
+            </li>
           </ul>
         </section>
 
@@ -213,9 +231,8 @@
             </li>
 
             <li class="projects__item flip-in-hor-bottom">
-              <a href="https://opd.strdenis.com/" target="_blank"><img
-                  class="projects__image" src="assets/img/portfolio/simetra.png"
-                  alt="Simetra image" />
+              <a href="https://opd.strdenis.com/" target="_blank"><img class="projects__image"
+                  src="assets/img/portfolio/simetra.png" alt="Simetra image" />
                 <img class="projects__icon" src="./assets/svg/link-icon.svg"> </a>
               <h4 class="projects__name">Simetra app</h4>
             </li>
@@ -259,7 +276,7 @@
               <a href="   https://klekwedge.github.io/math-for-kids/" target="_blank"><img class="projects__image"
                   src="assets/img/portfolio/math-for-kids.png" alt="Math for kids" />
                 <img class="projects__icon" src="./assets/svg/link-icon.svg"> </a>
-              <h4 class="projects__name">математика для детей</h4>
+              <h4 class="projects__name">Математика для детей</h4>
             </li>
 
 
@@ -278,8 +295,8 @@
             </li>
 
             <li class="projects__item flip-in-hor-bottom">
-              <a href="https://klekwedge.github.io/decor-color-expert/" target="_blank"><img
-                  class="projects__image" src="assets/img/portfolio/decor-color-expert.png" alt="Decor color expert" />
+              <a href="https://klekwedge.github.io/decor-color-expert/" target="_blank"><img class="projects__image"
+                  src="assets/img/portfolio/decor-color-expert.png" alt="Decor color expert" />
                 <img class="projects__icon" src="./assets/svg/link-icon.svg"> </a>
               <h4 class="projects__name">Decor color expert</h4>
             </li>
@@ -293,12 +310,11 @@
 
             <li class="projects__item flip-in-hor-bottom">
               <a href="https://klekwedge.github.io/cssMemSlider/cssMemSlider/" target="_blank"><img
-                  class="projects__image" src="assets/img/portfolio/css-slider.png"
-                  alt="Css slider image" />
+                  class="projects__image" src="assets/img/portfolio/css-slider.png" alt="Css slider image" />
                 <img class="projects__icon" src="./assets/svg/link-icon.svg"> </a>
               <h4 class="projects__name">Css слайдер</h4>
             </li>
-            
+
             <li class="projects__item flip-in-hor-bottom">
               <a href="https://klekwedge.github.io/marathon-js/gallery%20of%20cards/" target="_blank"><img
                   class="projects__image" src="assets/img/portfolio/gallery-of-cards.png" alt="Gallery of cards" />
@@ -357,17 +373,17 @@
             <ul class="footer__list-links links">
               <li class="links__item">
                 <a href="https://t.me/klekkwedge">
-                  <picture><source srcset="assets/img/telegram.webp" type="image/webp"><img class="icon__image _icon" src="assets/img/telegram.png" alt="Telegram icon" /></picture>
+                  <img class="icon__image _icon" src="assets/svg/telegram.svg" alt="Telegram icon" />
                 </a>
               </li>
               <li class="links__item">
                 <a href="https://www.linkedin.com/in/klekwedge/">
-                  <picture><source srcset="assets/img/linkedin.webp" type="image/webp"><img class="icon__image _icon" src="assets/img/linkedin.png" alt="Linkedin logo" /></picture>
+                  <img class="icon__image _icon" src="assets/svg/linkedIn.svg" alt="Linkedin logo" />
                 </a>
               </li>
               <li class="links__item">
                 <a href="https://github.com/klekwedge">
-                  <picture><source srcset="assets/img/github.webp" type="image/webp"><img class="icon__image _icon" src="assets/img/github.png" alt="Github logo" /></picture>
+                  <img class="icon__image _icon" src="assets/svg/github.svg" alt="Github logo" />
                 </a>
               </li>
             </ul>
@@ -379,7 +395,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/app.min.js?_v=20220706153412"></script>
+  <script src="js/app.min.js?_v=20220825221112"></script>
 </body>
 
 </html>
