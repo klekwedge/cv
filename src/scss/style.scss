@@ -136,6 +136,8 @@ body._lock {
   }
 
   &__list {
+    min-height: 40px;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
