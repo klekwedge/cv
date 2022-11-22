@@ -1,5 +1,7 @@
+import About from '../About/About'
 import Greetings from '../Greetings/Greetings'
 import Header from '../Header/Header'
+import Skills from '../Skills/Skills'
 import './App.css'
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
       <main className="main">
         <Greetings/>
         <div className="main__container _container">
-
+          <About/>
+          <Skills/>
         </div>
       </main>
     </div>
