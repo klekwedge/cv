@@ -1,4 +1,5 @@
 import About from '../About/About'
+import Footer from '../Footer/Footer'
 import Greetings from '../Greetings/Greetings'
 import Header from '../Header/Header'
 import Projects from '../Projects/Projects'
@@ -20,6 +21,7 @@ function App() {
           <Projects/>
         </div>
       </main>
+      <Footer/>
     </div>
   )
 }
