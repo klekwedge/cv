@@ -9,6 +9,9 @@ function App() {
       <Header/>
       <main className="main">
         <Greetings/>
+        <div className="main__container _container">
+
+        </div>
       </main>
     </div>
   )
