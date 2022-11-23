@@ -1,12 +1,10 @@
-import TypeIt from "typeit-react";
-
 function Greetings() {
   return (
     <section className="main__greetings greetings">
       <div className="greetings__container _container">
-        <TypeIt className="greetings__name">
+        <h2 className="greetings__name">
           Привет, меня зовут Андрей 👋
-        </TypeIt>
+        </h2>
         <h3 className="greetings__qualification _anim-item text-focus-in">
           Front-End разработчик
         </h3>
