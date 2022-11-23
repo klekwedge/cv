@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
+import links from "../../data/linkData";
 import "./Header.scss";
 
 function Header() {
@@ -11,6 +13,25 @@ function Header() {
       iconMenu.current.classList.toggle("_active");
       menuBody.current.classList.toggle("_active");
     }
+  };
+
+  const activeLink = () => {
+    const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
+    const sections = document.querySelectorAll("section"); // ищем все секции
+    sections.forEach((section) => {
+      if (window.pageYOffset >= section.offsetTop) {
+        links.forEach((link) => {
+          link.classList.remove("_active-link");
+
+          if (
+            link.getAttribute("href")?.replace("#", "") ===
+            section.getAttribute("id")
+          ) {
+            link.classList.add("_active-link");
+          }
+        });
+      }
+    });
   };
 
   const menuLinksToggle = () => {
@@ -27,44 +48,18 @@ function Header() {
         <div className="header__menu menu">
           <nav className="menu__body" ref={menuBody}>
             <ul className="menu__list">
-              <li className="menu__item">
-                <a
-                  href="#about"
-                  className="menu__link _link"
-                  onClick={menuLinksToggle}
-                >
-                  Обо мне
-                </a>
-              </li>
-              <li className="menu__item">
-                <a
-                  href="#experience"
-                  className="menu__link _link"
-                  onClick={menuLinksToggle}
-                  
-                >
-                  Опыт
-                </a>
-              </li>
-              <li className="menu__item">
-                <a
-                  href="#skills"
-                  className="menu__link _link"
-                  onClick={menuLinksToggle}
-                >
-                  Навыки
-                </a>
-              </li>
-
-              <li className="menu__item">
-                <a
-                  href="#projects"
-                  className="menu__link _link"
-                  onClick={menuLinksToggle}
-                >
-                  Проекты
-                </a>
-              </li>
+              {links.map((item) => (
+                <li className="menu__item">
+                  <a
+                    href={item.href}
+                    className="menu__link _link"
+                    onClick={menuLinksToggle}
+                    key={uuidv4()}
+                  >
+                    {item.text}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
           <div className="menu__icon" ref={iconMenu} onClick={iconMenuToggle}>

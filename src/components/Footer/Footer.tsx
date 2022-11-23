@@ -3,7 +3,7 @@ import {
   GITHUB_USERNAME,
   LINKEDIN_ID,
   TELEGRAM_ID,
-} from "../../root.link";
+} from "../../data/variables";
 
 function Footer() {
   return (

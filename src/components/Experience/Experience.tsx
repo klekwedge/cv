@@ -9,7 +9,6 @@ function Experience() {
       <div className="">
         <div className="main-cont">
           <div id="cd-timeline" className="cd-container">
-            {/*  */}
             {workHistory &&
               workHistory.map((work) => (
                 <div className="cd-timeline-block" key={uuidv4()}>

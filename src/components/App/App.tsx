@@ -41,13 +41,13 @@ function App() {
     sections.forEach((section) => {
       if (window.pageYOffset >= section.offsetTop) {
         links.forEach((link) => {
-          link.classList.remove("_active");
+          link.classList.remove("_active-link");
 
           if (
             link.getAttribute("href")?.replace("#", "") ===
             section.getAttribute("id")
           ) {
-            link.classList.add("_active");
+            link.classList.add("_active-link");
           }
         });
       }

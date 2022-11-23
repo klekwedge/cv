@@ -1,6 +1,6 @@
 import { FiExternalLink } from "react-icons/fi";
-import projects from "../../projectData";
-import { GITHUB_USERNAME } from "../../root.link";
+import projects from "../../data/projectData";
+import { GITHUB_USERNAME } from "../../data/variables";
 
 function Projects() {
   return (

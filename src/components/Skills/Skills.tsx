@@ -1,4 +1,4 @@
-import { Proficient, Familiar } from "./../../skillsData";
+import { Proficient, Familiar } from "../../data/skillsData";
 
 function Skills() {
   return (

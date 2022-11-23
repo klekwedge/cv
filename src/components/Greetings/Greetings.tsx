@@ -1,4 +1,4 @@
-import { EMAIL_ID, RESUME_LINK } from "../../root.link";
+import { EMAIL_ID, RESUME_LINK } from "../../data/variables";
 import './Greetings.scss';
 
 function Greetings() {
