@@ -9,7 +9,7 @@ import Strengths from "../Strengths/Strengths";
 
 function App() {
 
-  function offset(el: any) {
+  function offset(el: HTMLElement) {
     const rect = el.getBoundingClientRect();
     const scrollLeft =
       window.pageXOffset || document.documentElement.scrollLeft;
@@ -17,7 +17,8 @@ function App() {
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
   }
 
-  function animOnScroll(animItems: any) {
+  function animOnScroll(animItems:  NodeListOf<HTMLElement>) {
+    console.log(animItems);
     for (let i = 0; i < animItems.length; i += 1) {
       const animItem = animItems[i];
       const animItemHeight = animItem.offsetHeight;
@@ -40,7 +41,7 @@ function App() {
 
 
   useEffect(() => {
-    const animItems = document.querySelectorAll("._anim-item");
+    const animItems: NodeListOf<HTMLElement> = document.querySelectorAll("._anim-item");
     window.addEventListener("scroll", () => animOnScroll(animItems));
 
     return () => {
