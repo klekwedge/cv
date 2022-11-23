@@ -6,16 +6,12 @@ import "./Projects.scss";
 function Projects() {
   return (
     <section className="my-30 px-5" id="projects">
-      <header className="text-2xl font-bold pt-10">
-        <h2 className="_title">Проекты</h2>
-        <div className="_heading-decoration"></div>
-      </header>
-      <div className="my-7 space-y-24">
+      <h2 className="_title">Проекты</h2>
+      <div className="_heading-decoration"></div>
+
+      <div className="my-7 space-y-40">
         {projects.map((project, index) => (
-          <article
-            className="flex flex-wrap md:justify-between md:items-center"
-            key={index}
-          >
+          <article className="flex flex-wrap md:justify-between" key={index}>
             <picture
               className={
                 index % 2 === 0
@@ -54,7 +50,7 @@ function Projects() {
             </div>
           </article>
         ))}
-      </div>{" "}
+      </div>
       <div className="mx-5">
         <a
           href={`https://github.com/${GITHUB_USERNAME}`}

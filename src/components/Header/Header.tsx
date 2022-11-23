@@ -52,10 +52,10 @@ function Header() {
                 <li className="menu__item" key={uuidv4()}>
                   <a
                     href={item.href}
-                    className="menu__link _link"
                     onClick={() => {
                       menuLinksToggle;
                     }}
+                    className="menu__link _link"
                   >
                     {item.text}
                   </a>

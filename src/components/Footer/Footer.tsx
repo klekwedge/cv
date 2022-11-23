@@ -41,7 +41,7 @@ function Footer() {
                 </a>
               </li>
               <li className="links__item">
-                <a className="_link" href={`mailto:${EMAIL_ID}`}>
+                <a href={`mailto:${EMAIL_ID}`}>
                   <img src="./assets/svg/mail-icon.svg" />
                 </a>
               </li>
