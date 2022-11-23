@@ -8,33 +8,6 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
 function App() {
-  function offset(el: HTMLElement) {
-    const rect = el.getBoundingClientRect();
-    const scrollLeft =
-      window.pageXOffset || document.documentElement.scrollLeft;
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
-  }
-
-  function animOnScroll(animItems: NodeListOf<HTMLElement>) {
-    for (let i = 0; i < animItems.length; i += 1) {
-      const animItem = animItems[i];
-      const animItemHeight = animItem.offsetHeight;
-      const animItemOffset = offset(animItem).top;
-      const animStart = 4;
-      let animItemPoint = window.innerHeight - animItemHeight / animStart;
-      if (animItemHeight > window.innerHeight) {
-        animItemPoint = window.innerHeight - window.innerHeight / animStart;
-      }
-      if (
-        window.scrollY > animItemOffset - animItemPoint &&
-        window.scrollY < animItemOffset + animItemHeight
-      ) {
-        animItem.classList.add("_active");
-      }
-    }
-  }
-
   function scrollFunction() {
     const menuBody = document.querySelector(".header") as HTMLElement;
     if (
@@ -67,14 +40,10 @@ function App() {
   };
 
   useEffect(() => {
-    const animItems: NodeListOf<HTMLElement> =
-      document.querySelectorAll("._anim-item");
-    window.addEventListener("scroll", () => animOnScroll(animItems));
     window.addEventListener("scroll", () => activeLink());
     window.addEventListener("scroll", () => scrollFunction());
 
     return () => {
-      window.removeEventListener("scroll", () => animOnScroll(animItems));
       window.removeEventListener("scroll", () => activeLink());
       window.addEventListener("scroll", () => scrollFunction());
     };

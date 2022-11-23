@@ -7,7 +7,7 @@ function Greetings() {
       <div className="greetings__container _container">
         <div className="greetings__info">
           <h2 className="greetings__name">Привет, меня зовут Андрей</h2>
-          <h3 className="greetings__qualification _anim-item text-focus-in">
+          <h3 className="greetings__qualification  text-focus-in">
             Я Front-End разработчик
           </h3>
           <div className="greetings__buttons">
