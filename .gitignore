@@ -127,8 +127,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Assembly
-gulp
-gulpfile.js
-package-lock.json
