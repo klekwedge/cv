@@ -19,7 +19,9 @@ function Skills() {
                 aria-label={x.skill}
                 key={index}
               >
-                <div className="mb-3"> {x.logo}</div>
+                <div className="mb-3">
+                  <img src={x.logo} alt={x.logo} width="60" height="60" />
+                </div>
                 {x.skill}
               </div>
             ))}
@@ -38,7 +40,9 @@ function Skills() {
                 aria-label={x.skill}
                 key={index}
               >
-                <div className="mb-3"> {x.logo}</div>
+                <div className="mb-3">
+                  <img src={x.logo} alt={x.logo} width="60" height="60" />
+                </div>
 
                 {x.skill}
               </div>
