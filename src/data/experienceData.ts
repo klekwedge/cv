@@ -10,16 +10,7 @@ const workHistory = [
       "исправление багов",
       "взаимодействие с серверной частью веб-приложения",
     ],
-    exposer: [
-      "React",
-      "Redux Saga ",
-      "NodeJs",
-      "ExpressJs",
-      "MongoDB",
-      "Heroku",
-      "Twitter API’s",
-      "LinkedIn API",
-    ],
+    exposer: ["Vue", "Vuex", "Vue Router", "Vuetify"],
     link: "#",
   },
   {
@@ -35,7 +26,7 @@ const workHistory = [
       "фронтенд-скелет всего проекта",
       "другие мелкие настройки интерфейса",
     ],
-    exposer: ["React ", "NodeJs", "MongoDB", "ContextAPI"],
+    exposer: ["HTML ", "SCSS", "JavaScript", "Go.js"],
     link: "#",
   },
   {
@@ -50,7 +41,7 @@ const workHistory = [
       "верстка и адаптив для страниц 'аналитики', 'методологии' и 'настройки'",
       "много других мелких настроек интерфейса",
     ],
-    exposer: ["React ", "NodeJs", "MongoDB", "ContextAPI"],
+    exposer: ["HTML ", "SCSS", "JavaScript", "Chart.js"],
     link: "#",
   },
 ];

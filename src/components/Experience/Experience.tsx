@@ -1,6 +1,6 @@
 import { FiExternalLink } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
-import workHistory from "../exData";
+import workHistory from "../../data/experienceData";
 import "./style.ex.css";
 function Experience() {
   return (
