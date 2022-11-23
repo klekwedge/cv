@@ -8,7 +8,7 @@ function Greetings() {
         <div className="greetings__info">
           <h2 className="greetings__name">Привет, меня зовут Андрей</h2>
           <h3 className="greetings__qualification  text-focus-in">
-            Я Front-End разработчик
+            Я Frontend разработчик
           </h3>
           <div className="greetings__buttons">
             <a className="greetings__button" href={`mailto:${EMAIL_ID}`}>

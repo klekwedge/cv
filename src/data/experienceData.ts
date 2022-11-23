@@ -27,7 +27,7 @@ const workHistory = [
       "другие мелкие настройки интерфейса",
     ],
     exposer: ["HTML ", "SCSS", "JavaScript", "Go.js"],
-    link: "#",
+    link: "https://ritm3.ru/",
   },
   {
     companyName: "SIMETRA «А+С Транспроект»",
@@ -42,7 +42,7 @@ const workHistory = [
       "много других мелких настроек интерфейса",
     ],
     exposer: ["HTML ", "SCSS", "JavaScript", "Chart.js"],
-    link: "#",
+    link: "https://simetragroup.ru/",
   },
 ];
 
