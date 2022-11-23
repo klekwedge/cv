@@ -5,8 +5,9 @@ function Experience() {
   return (
     <div id="Experience">
       <section className="my-28 px-5" id="projects">
-        <header className="text-2xl font-bold pt-10">
+        <header className="text-4xl font-bold pt-10">
           <h2>Опыт</h2>
+          {/* <div className="test"></div> */}
         </header>
         <div className="">
           <div className="main-cont">
@@ -27,7 +28,7 @@ function Experience() {
                                 target="_blank"
                                 rel="noreferrer"
                               >
-                                <FiExternalLink size='22'/>
+                                <FiExternalLink size="22" />
                               </a>
                             </div>
                           )}

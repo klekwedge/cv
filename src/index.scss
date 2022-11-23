@@ -615,3 +615,16 @@ body._lock {
     transform: scale(1.2);
   }
 }
+/////
+
+
+.test {
+  width: 150px;
+  height: 6px;
+  margin: 8px 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+
+  // background: linear-gradient(270deg, #F46737 0%, #945DD6 100%),
+}
