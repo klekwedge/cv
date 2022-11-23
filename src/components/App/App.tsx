@@ -6,10 +6,8 @@ import Header from "../Header/Header";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Strengths from "../Strengths/Strengths";
-import "./App.css";
 
 function App() {
-
 
   function offset(el: any) {
     const rect = el.getBoundingClientRect();
