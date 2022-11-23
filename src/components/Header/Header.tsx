@@ -3,7 +3,6 @@ import { useRef } from "react";
 function Header() {
   const iconMenu = useRef<HTMLDivElement>(null);
   const menuBody = useRef<HTMLElement>(null);
-  const menuLinks = useRef();
 
   const iconMenuToggle = () => {
     if (iconMenu.current && menuBody.current) {
@@ -37,7 +36,7 @@ function Header() {
                   className="menu__link _link"
                   onClick={menuLinksToggle}
                 >
-                  Обо мне{" "}
+                  Обо мне
                 </a>
               </li>
               <li className="menu__item">
@@ -55,7 +54,7 @@ function Header() {
                   className="menu__link _link"
                   onClick={menuLinksToggle}
                 >
-                  Сильные стороны
+                  Опыт
                 </a>
               </li>
               <li className="menu__item">
