@@ -22,12 +22,10 @@ function App() {
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
       const animStart = 4;
-
       let animItemPoint = window.innerHeight - animItemHeight / animStart;
       if (animItemHeight > window.innerHeight) {
         animItemPoint = window.innerHeight - window.innerHeight / animStart;
       }
-
       if (
         window.scrollY > animItemOffset - animItemPoint &&
         window.scrollY < animItemOffset + animItemHeight
@@ -37,13 +35,34 @@ function App() {
     }
   }
 
+  const activeLink = () => {
+    const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
+    const sections = document.querySelectorAll("section"); // ищем все секции
+    sections.forEach((section) => {
+      if (window.pageYOffset >= section.offsetTop) {
+        links.forEach((link) => {
+          link.classList.remove("_active");
+
+          if (
+            link.getAttribute("href")?.replace("#", "") ===
+            section.getAttribute("id")
+          ) {
+            link.classList.add("_active");
+          }
+        });
+      }
+    });
+  };
+
   useEffect(() => {
     const animItems: NodeListOf<HTMLElement> =
       document.querySelectorAll("._anim-item");
     window.addEventListener("scroll", () => animOnScroll(animItems));
+    window.addEventListener("scroll", () => activeLink());
 
     return () => {
       window.removeEventListener("scroll", () => animOnScroll(animItems));
+      window.removeEventListener("scroll", () => activeLink());
     };
   }, []);
 

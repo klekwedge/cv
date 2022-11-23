@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./Header.scss";
 
 function Header() {
   const iconMenu = useRef<HTMLDivElement>(null);
@@ -24,10 +25,6 @@ function Header() {
     <header className="header">
       <div className="header__container _container">
         <div className="header__menu menu">
-          <h1 className="menu__logo">
-            <span>A</span>
-            Andrey Antonov
-          </h1>
           <nav className="menu__body" ref={menuBody}>
             <ul className="menu__list">
               <li className="menu__item">
@@ -41,9 +38,10 @@ function Header() {
               </li>
               <li className="menu__item">
                 <a
-                  href="#strengths"
+                  href="#experience"
                   className="menu__link _link"
                   onClick={menuLinksToggle}
+                  
                 >
                   Опыт
                 </a>
