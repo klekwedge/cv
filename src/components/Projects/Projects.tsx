@@ -1,13 +1,14 @@
 import { FiExternalLink } from "react-icons/fi";
 import projects from "../../data/projectData";
 import { GITHUB_USERNAME } from "../../data/variables";
-import './Projects.scss'
+import "./Projects.scss";
 
 function Projects() {
   return (
     <section className="my-30 px-5" id="projects">
       <header className="text-2xl font-bold pt-10">
-        <h2>Проекты</h2>
+        <h2 className="_title">Проекты</h2>
+        <div className="_heading-decoration"></div>
       </header>
       <div className="my-7 space-y-24">
         {projects.map((project, index) => (

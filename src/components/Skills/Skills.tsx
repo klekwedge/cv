@@ -5,7 +5,8 @@ function Skills() {
   return (
     <section className="my-28  px-5" id="skills">
       <header className="text-2xl font-bold pt-10 mb-5">
-        <h2>Навыки и инструменты</h2>
+        <h2 className="_title">Навыки и инструменты</h2>
+        <div className="_heading-decoration"></div>
       </header>
       {Proficient?.length > 0 && (
         <div className="pl-3">

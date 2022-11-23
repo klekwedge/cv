@@ -5,7 +5,8 @@ import "./style.ex.css";
 function Experience() {
   return (
     <section id="experience">
-      <h2>Опыт</h2>
+      <h2 className="_title">Опыт</h2>
+      <div className="_heading-decoration"></div>
       <div className="">
         <div className="main-cont">
           <div id="cd-timeline" className="cd-container">

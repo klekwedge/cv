@@ -5,6 +5,7 @@ function About() {
     <section className="main__about" id="about">
       <div className="_heading">
         <h3 className="about__title _title">Обо мне</h3>
+        <div className="_heading-decoration"></div>
       </div>
       <div className="about__content">
         <div className="about__photo ">
