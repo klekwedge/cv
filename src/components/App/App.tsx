@@ -8,7 +8,7 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
 function App() {
-  function scrollFunction() {
+  function changeHeaderOnScroll() {
     const menuBody = document.querySelector(".header") as HTMLElement;
     if (
       document.body.scrollTop > 40 ||
@@ -20,7 +20,7 @@ function App() {
     }
   }
 
-  const activeLink = () => {
+  const activeAnchorLink = () => {
     const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
     const sections = document.querySelectorAll("section"); // ищем все секции
     sections.forEach((section) => {
@@ -40,12 +40,12 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => activeLink());
-    window.addEventListener("scroll", () => scrollFunction());
+    window.addEventListener("scroll", () => activeAnchorLink());
+    window.addEventListener("scroll", () => changeHeaderOnScroll());
 
     return () => {
-      window.removeEventListener("scroll", () => activeLink());
-      window.addEventListener("scroll", () => scrollFunction());
+      window.removeEventListener("scroll", () => activeAnchorLink());
+      window.addEventListener("scroll", () => changeHeaderOnScroll());
     };
   }, []);
 

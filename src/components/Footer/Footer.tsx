@@ -4,6 +4,7 @@ import {
   LINKEDIN_ID,
   TELEGRAM_ID,
 } from "../../data/variables";
+import './Footer.scss'
 
 function Footer() {
   return (

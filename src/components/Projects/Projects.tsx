@@ -1,6 +1,7 @@
 import { FiExternalLink } from "react-icons/fi";
 import projects from "../../data/projectData";
 import { GITHUB_USERNAME } from "../../data/variables";
+import './Projects.scss'
 
 function Projects() {
   return (

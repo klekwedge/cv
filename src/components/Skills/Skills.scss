@@ -1,0 +1,38 @@
+/*-------------------------------------------------------------*/
+/*-----Skills--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 40px;
+}
+
+// .skills__item ing {
+//   width: 150px;
+//   height: 150px;
+//   display: block;
+//   margin: 0 auto;
+//   margin-bottom: 30px;
+//   fill: white;
+//   background-color: #333333;
+//   border: 1px solid #3776AB;
+//   padding: 10px;
+// }
+
+.skills__item .skills__image {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.skills__subtitle {
+  text-align: center;
+  font-size: 20px;
+}
+.skills__item {
+  line-height: 180%;
+  padding-left: 15px;
+}

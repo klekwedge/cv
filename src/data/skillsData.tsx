@@ -12,6 +12,7 @@ import {
   SiJava,
   SiJavascript,
   SiJquery,
+  SiNextdotjs,
   SiNodedotjs,
   SiPug,
   SiPython,
@@ -30,7 +31,7 @@ import {
 const Proficient = [
   {
     skill: "HTML",
-    logo: <SiHtml5 color="#FC490B" size="60" />,
+    logo: <SiHtml5 color="#FC490B" size="60"/>,
   },
   {
     skill: "CSS",
@@ -118,6 +119,10 @@ const Familiar = [
   {
     skill: "Gulp",
     logo: <SiGulp size="60" />,
+  },
+  {
+    skill: "Next",
+    logo: <SiNextdotjs size="60" />,
   },
   {
     skill: "Node",

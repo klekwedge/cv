@@ -1,0 +1,32 @@
+/*-------------------------------------------------------------*/
+/*-----About---------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.about {
+  margin-top: 80px;
+  &__content {
+    display: flex;
+    gap: 40px 40px;
+    @media (max-width: 892px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    border-radius: 10px;
+    max-width: 400px;
+    @media (max-width: 490px) {
+      max-width: 300px;
+    }
+    @media (max-width: 375px) {
+      max-width: 250px;
+    }
+  }
+
+  &__paragraph {
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Roboto", sans-serif;
+    text-indent: 30px;
+  }
+}

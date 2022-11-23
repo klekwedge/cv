@@ -1,4 +1,5 @@
 import { Proficient, Familiar } from "../../data/skillsData";
+import "./Skills.scss";
 
 function Skills() {
   return (
