@@ -1,3 +1,4 @@
+import { FiExternalLink } from "react-icons/fi";
 import projects from "../../projectData";
 import { GITHUB_USERNAME } from "../../root.link";
 
@@ -49,12 +50,7 @@ function Projects() {
                       />
                     </a>
                     <a href={project.link} target="_blank" rel="noreferrer">
-                      <img
-                        src="/public/assets/svg/link-icon.svg"
-                        alt="link to live website"
-                        width="24px"
-                        height="24px"
-                      />
+                      <FiExternalLink size='24'/>
                     </a>
                   </div>
                 </div>

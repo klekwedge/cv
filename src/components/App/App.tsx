@@ -17,7 +17,6 @@ function App() {
   }
 
   function animOnScroll(animItems: NodeListOf<HTMLElement>) {
-    console.log(animItems);
     for (let i = 0; i < animItems.length; i += 1) {
       const animItem = animItems[i];
       const animItemHeight = animItem.offsetHeight;
