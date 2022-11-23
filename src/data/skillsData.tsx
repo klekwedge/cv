@@ -1,4 +1,5 @@
 import {
+  SiChakraui,
   SiChartdotjs,
   SiCplusplus,
   SiCss3,
@@ -10,6 +11,9 @@ import {
   SiHtml5,
   SiJava,
   SiJavascript,
+  SiJquery,
+  SiNodedotjs,
+  SiPug,
   SiPython,
   SiReact,
   SiReactrouter,
@@ -18,6 +22,8 @@ import {
   SiSass,
   SiTailwindcss,
   SiTypescript,
+  SiVuedotjs,
+  SiVuetify,
   SiWebpack,
 } from "react-icons/si";
 
@@ -28,15 +34,15 @@ const Proficient = [
   },
   {
     skill: "CSS",
-    logo: <SiCss3 color='#2196F3' size="60" />,
+    logo: <SiCss3 color="#2196F3" size="60" />,
   },
   {
     skill: "SASS / SCSS",
-    logo: <SiSass color='#CB6699' size="60" />,
+    logo: <SiSass color="#CB6699" size="60" />,
   },
   {
     skill: "Tailwind CSS",
-    logo: <SiTailwindcss color='#48ACB4' size="60" />,
+    logo: <SiTailwindcss color="#48ACB4" size="60" />,
   },
   {
     skill: "Javascript",
@@ -44,7 +50,7 @@ const Proficient = [
   },
   {
     skill: "TypeScript",
-    logo: <SiTypescript color='#007ACC' size="60" />,
+    logo: <SiTypescript color="#007ACC" size="60" />,
   },
   {
     skill: "Python",
@@ -52,11 +58,11 @@ const Proficient = [
   },
   {
     skill: "Git",
-    logo: <SiGit color='#F03C2E' size="60" />,
+    logo: <SiGit color="#F03C2E" size="60" />,
   },
   {
     skill: "React",
-    logo: <SiReact color='#61DAFB' size="60" />,
+    logo: <SiReact color="#61DAFB" size="60" />,
   },
   {
     skill: "React Router",
@@ -64,11 +70,32 @@ const Proficient = [
   },
   {
     skill: "Redux",
-    logo: <SiRedux color='#764ABC' size="60" />,
+    logo: <SiRedux color="#764ABC" size="60" />,
   },
   {
     skill: "Redux Toolkit",
-    logo: <SiRedux color='#764ABC' size="60" />,
+    logo: <SiRedux color="#764ABC" size="60" />,
+  },
+  {
+    skill: "Chakra UI",
+    logo: <SiChakraui size="60" />,
+  },
+  {
+    skill: "Vue",
+    logo: <SiVuedotjs size="60" />,
+  },
+
+  {
+    skill: "Vuex",
+    logo: <h1>Logo</h1>,
+  },
+  {
+    skill: "Vue Router",
+    logo: <h1>Logo</h1>,
+  },
+  {
+    skill: "Vuetify",
+    logo: <SiVuetify size="60" />,
   },
   {
     skill: "Figma",
@@ -76,7 +103,7 @@ const Proficient = [
   },
   {
     skill: "GitHub",
-    logo: <SiGithub color='#FFFFFF' size="60" />,
+    logo: <SiGithub color="#FFFFFF" size="60" />,
   },
   {
     skill: "GitLab",
@@ -90,7 +117,20 @@ const Familiar = [
   },
   {
     skill: "Gulp",
-    logo: <SiGulp color='#EB4A4B' size="60" />,
+    logo: <SiGulp size="60" />,
+  },
+  {
+    skill: "Node",
+    logo: <SiNodedotjs size="60" />,
+  },
+
+  {
+    skill: "jQuery",
+    logo: <SiJquery size="60" />,
+  },
+  {
+    skill: "Pug",
+    logo: <SiPug size="60" />,
   },
   {
     skill: "Chart.js",
