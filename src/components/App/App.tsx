@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import About from "../About/About";
+import Experience from "../Experience/Experience";
 import Footer from "../Footer/Footer";
 import Greetings from "../Greetings/Greetings";
 import Header from "../Header/Header";
@@ -7,7 +8,6 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 
 function App() {
-
   function offset(el: HTMLElement) {
     const rect = el.getBoundingClientRect();
     const scrollLeft =
@@ -16,7 +16,7 @@ function App() {
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
   }
 
-  function animOnScroll(animItems:  NodeListOf<HTMLElement>) {
+  function animOnScroll(animItems: NodeListOf<HTMLElement>) {
     console.log(animItems);
     for (let i = 0; i < animItems.length; i += 1) {
       const animItem = animItems[i];
@@ -38,9 +38,9 @@ function App() {
     }
   }
 
-
   useEffect(() => {
-    const animItems: NodeListOf<HTMLElement> = document.querySelectorAll("._anim-item");
+    const animItems: NodeListOf<HTMLElement> =
+      document.querySelectorAll("._anim-item");
     window.addEventListener("scroll", () => animOnScroll(animItems));
 
     return () => {
@@ -55,6 +55,7 @@ function App() {
         <Greetings />
         <div className="main__container _container">
           <About />
+          <Experience />
           <Skills />
           <Projects />
         </div>

@@ -41,15 +41,6 @@ function Header() {
               </li>
               <li className="menu__item">
                 <a
-                  href="#skills"
-                  className="menu__link _link"
-                  onClick={menuLinksToggle}
-                >
-                  Навыки
-                </a>
-              </li>
-              <li className="menu__item">
-                <a
                   href="#strengths"
                   className="menu__link _link"
                   onClick={menuLinksToggle}
@@ -57,6 +48,16 @@ function Header() {
                   Опыт
                 </a>
               </li>
+              <li className="menu__item">
+                <a
+                  href="#skills"
+                  className="menu__link _link"
+                  onClick={menuLinksToggle}
+                >
+                  Навыки
+                </a>
+              </li>
+
               <li className="menu__item">
                 <a
                   href="#projects"
