@@ -5,7 +5,6 @@ import Greetings from "../Greetings/Greetings";
 import Header from "../Header/Header";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
-import Strengths from "../Strengths/Strengths";
 
 function App() {
 
@@ -57,7 +56,6 @@ function App() {
         <div className="main__container _container">
           <About />
           <Skills />
-          <Strengths />
           <Projects />
         </div>
       </main>
