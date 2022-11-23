@@ -1,6 +1,13 @@
 @import "/src/scss/variables";
 
 .header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  transition: box-shadow 0.5s ease;
+  box-shadow: '';
+  background-color: $background-color;
+
   &__menu {
     display: flex;
     align-items: center;
@@ -14,9 +21,6 @@
 }
 
 .menu {
-  position: fixed;
-
-  z-index: 100;
   &__logo {
     display: flex;
     align-items: center;
@@ -118,6 +122,7 @@
   }
 
   .menu__body {
+    transition: all 0.5 ease-in;
     position: fixed;
     z-index: 3;
     top: 0;

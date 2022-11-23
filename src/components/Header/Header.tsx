@@ -15,24 +15,24 @@ function Header() {
     }
   };
 
-  const activeLink = () => {
-    const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
-    const sections = document.querySelectorAll("section"); // ищем все секции
-    sections.forEach((section) => {
-      if (window.pageYOffset >= section.offsetTop) {
-        links.forEach((link) => {
-          link.classList.remove("_active-link");
+  // const activeLink = () => {
+  //   const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
+  //   const sections = document.querySelectorAll("section"); // ищем все секции
+  //   sections.forEach((section) => {
+  //     if (window.pageYOffset >= section.offsetTop) {
+  //       links.forEach((link) => {
+  //         link.classList.remove("_active-link");
 
-          if (
-            link.getAttribute("href")?.replace("#", "") ===
-            section.getAttribute("id")
-          ) {
-            link.classList.add("_active-link");
-          }
-        });
-      }
-    });
-  };
+  //         if (
+  //           link.getAttribute("href")?.replace("#", "") ===
+  //           section.getAttribute("id")
+  //         ) {
+  //           link.classList.add("_active-link");
+  //         }
+  //       });
+  //     }
+  //   });
+  // };
 
   const menuLinksToggle = () => {
     if (iconMenu.current && iconMenu.current.classList.contains("_active")) {
@@ -49,12 +49,13 @@ function Header() {
           <nav className="menu__body" ref={menuBody}>
             <ul className="menu__list">
               {links.map((item) => (
-                <li className="menu__item">
+                <li className="menu__item" key={uuidv4()}>
                   <a
                     href={item.href}
                     className="menu__link _link"
-                    onClick={menuLinksToggle}
-                    key={uuidv4()}
+                    onClick={() => {
+                      menuLinksToggle;
+                    }}
                   >
                     {item.text}
                   </a>

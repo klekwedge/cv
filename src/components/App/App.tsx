@@ -35,6 +35,18 @@ function App() {
     }
   }
 
+  function scrollFunction() {
+    const menuBody = document.querySelector(".header") as HTMLElement;
+    if (
+      document.body.scrollTop > 40 ||
+      document.documentElement.scrollTop > 40
+    ) {
+      menuBody.style.boxShadow = "0 0 5px 2px #2d2d2d";
+    } else {
+      menuBody.style.boxShadow = "";
+    }
+  }
+
   const activeLink = () => {
     const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
     const sections = document.querySelectorAll("section"); // ищем все секции
@@ -59,10 +71,12 @@ function App() {
       document.querySelectorAll("._anim-item");
     window.addEventListener("scroll", () => animOnScroll(animItems));
     window.addEventListener("scroll", () => activeLink());
+    window.addEventListener("scroll", () => scrollFunction());
 
     return () => {
       window.removeEventListener("scroll", () => animOnScroll(animItems));
       window.removeEventListener("scroll", () => activeLink());
+      window.addEventListener("scroll", () => scrollFunction());
     };
   }, []);
 
