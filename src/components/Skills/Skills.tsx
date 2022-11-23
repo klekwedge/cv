@@ -1,82 +1,58 @@
-function Skills() {
+import { Proficient, Familiar } from "./../../skillsData";
 
+function Skills() {
   return (
-    <section className="main__skills skills">
-          <div className="_heading">
-            <h3 id="skills" className="skills__title _title">Навыки</h3>
-          </div>
-          <ul className="skills__list _anim-item">
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/img/skills/html-5.png"/>
-              <h4 className="skills__subtitle">HTML5</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom _anim-item">
-              <img className="skills__image" src="assets/img/skills/css-3.png"/>
-              <h4 className="skills__subtitle shake-horizontal">CSS3</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/sass.svg"/>
-              <h4 className="skills__subtitle">SASS / SCSS</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/tailwindcss.svg"/>
-              <h4 className="skills__subtitle">Tailwind CSS</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/javascript.svg"/>
-              <h4 className="skills__subtitle">JavaScript</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/typescrip.svg"/>
-              <h4 className="skills__subtitle">TypeScript</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/python.svg"/>
-              <h4 className="skills__subtitle">Python</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/git.svg"/>
-              <h4 className="skills__subtitle">Git</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/github.svg"/>
-              <h4 className="skills__subtitle">GitHub</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/gitlab.svg"/>
-              <h4 className="skills__subtitle">GitLab</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/webpack.svg"/>
-              <h4 className="skills__subtitle">Webpack basics</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/gulp.svg"/>
-              <h4 className="skills__subtitle">Gulp basics</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/chartjs.svg"/>
-              <h4 className="skills__subtitle">Chart.js basics</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/figma.svg"/>
-              <h4 className="skills__subtitle">Figma</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/react.svg"/>
-              <h4 className="skills__subtitle">React</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/redux.svg"/>
-              <h4 className="skills__subtitle">Redux</h4>
-            </li>
-            <li className="skills__item _anim-slides-bottom">
-              <img className="skills__image" src="assets/svg/skills/redux.svg"/>
-              <h4 className="skills__subtitle">Redux Toolkit</h4>
-            </li>
-          </ul>
+    <>
+      <div id="Skill">
+        <section className="my-28  px-5">
+          <header className="text-2xl font-bold pt-10 mb-5">
+            <h2>Навыки и инструменты</h2>
+          </header>
+          {Proficient?.length > 0 && (
+            <div className="pl-3">
+              <h2 className="text-xl"> Опытный </h2>
+              <div className="my-7 grid gap-5 grid-cols-3 md:grid-cols-6 content-center">
+                {Proficient.map((x, index) => (
+                  <div
+                    className="flex flex-col items-center"
+                    tabIndex={0}
+                    role="img"
+                    aria-label={x.skill}
+                    key={index}
+                  >
+                    <div className="mb-3"> {x.logo}</div>
+                    {x.skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {Familiar?.length > 0 && (
+            <div className="pl-3">
+              <h2 className="text-xl"> Базовый </h2>
+              <div className="my-7 grid gap-5 grid-cols-3 md:grid-cols-6 content-center">
+                {Familiar.map((x, index) => (
+                  <div
+                    className="flex flex-col items-center"
+                    tabIndex={0}
+                    role="img"
+                    aria-label={x.skill}
+                    key={index}
+                  >
+                    <div className="mb-3"> {x.logo}</div>
+
+                    {x.skill}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* </div> */}
         </section>
-  )
+      </div>
+    </>
+  );
 }
 
-export default Skills
+export default Skills;

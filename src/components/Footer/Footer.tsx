@@ -47,9 +47,6 @@ function Footer() {
             </ul>
           </li>
         </ul>
-        <div className="footer__copyright">
-          <div>© 2022 by Andrey Antonov</div>
-        </div>
       </div>
     </footer>
   );
