@@ -1,12 +1,10 @@
-/*-------------------------------------------------------------*/
-/*-----About---------------------------------------------------*/
-/*-------------------------------------------------------------*/
 .about {
   margin-top: 80px;
+  padding: 0px 5px;
   &__content {
     display: flex;
     gap: 40px 40px;
-    @media (max-width: 892px) {
+    @media (max-width: 945px) {
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -16,10 +14,10 @@
     border-radius: 10px;
     max-width: 400px;
     @media (max-width: 490px) {
-      max-width: 300px;
+      max-width: 350px;
     }
     @media (max-width: 375px) {
-      max-width: 250px;
+      max-width: 280px;
     }
   }
 

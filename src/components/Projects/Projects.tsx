@@ -14,8 +14,8 @@ function Projects() {
             <picture
               className={
                 index % 2 === 0
-                  ? "w-full md:w-6/12 shadow-lg project__image"
-                  : "w-full md:w-6/12 shadow-lg _order project__image"
+                  ? "project__image"
+                  : "_order project__image"
               }
             >
               <img src={project.image} alt={project.title} />

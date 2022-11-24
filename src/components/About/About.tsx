@@ -2,7 +2,7 @@ import "./About.scss";
 
 function About() {
   return (
-    <section className="main__about" id="about">
+    <section className="main__about about" id="about">
       <div className="_heading">
         <h3 className="about__title _title">Обо мне</h3>
         <div className="_heading-decoration"></div>
