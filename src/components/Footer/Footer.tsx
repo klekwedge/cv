@@ -4,7 +4,7 @@ import {
   LINKEDIN_ID,
   TELEGRAM_ID,
 } from "../../data/variables";
-import './Footer.scss'
+import "./Footer.scss";
 
 function Footer() {
   return (
@@ -42,7 +42,11 @@ function Footer() {
               </li>
               <li className="links__item">
                 <a href={`mailto:${EMAIL_ID}`}>
-                  <img src="./assets/svg/mail-icon.svg" />
+                  <img
+                    src="./assets/svg/mail-icon.svg"
+                    className="icon__image _icon"
+                    alt="Email icon"
+                  />
                 </a>
               </li>
             </ul>

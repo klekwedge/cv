@@ -5,7 +5,7 @@
   z-index: 100;
   width: 100%;
   transition: box-shadow 0.5s ease;
-  box-shadow: '';
+  box-shadow: "";
   background-color: $background-color;
 
   &__menu {
@@ -24,17 +24,7 @@
   &__logo {
     display: flex;
     align-items: center;
-    border: 1px solid white;
-    padding: 5px;
-    gap: 10px;
-    & span {
-      font-weight: 700;
-      font-size: 20px;
-      display: block;
-      background-color: $complementary-color;
-      padding: 10px 12px;
-      border-radius: 50%;
-    }
+    width: 60px;
   }
 
   &__list {
@@ -62,11 +52,6 @@
 }
 
 @media (max-width: 800px) {
-  .menu__logo {
-    z-index: 5;
-    position: relative;
-  }
-
   .menu__icon {
     z-index: 5;
     display: block;

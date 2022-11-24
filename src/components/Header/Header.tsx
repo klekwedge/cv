@@ -46,6 +46,9 @@ function Header() {
     <header className="header">
       <div className="header__container _container">
         <div className="header__menu menu">
+          <a href="https://github.com/klekwedge" target="_blank">
+            <img className="menu__logo" src="/public/assets/img/logo.png" />
+          </a>
           <nav className="menu__body" ref={menuBody}>
             <ul className="menu__list">
               {links.map((item) => (
