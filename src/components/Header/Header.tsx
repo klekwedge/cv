@@ -60,7 +60,7 @@ function Header() {
                     }}
                     className="menu__link _link"
                   >
-                    <span className="_link-number"> {`${index + 1}.`}</span>
+                  
                     {item.text}
                   </a>
                 </li>

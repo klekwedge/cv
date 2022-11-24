@@ -2,73 +2,96 @@
 /*-----Projects------------------------------------------------*/
 /*-------------------------------------------------------------*/
 @import "/src/scss/modules/variables";
-
-.projects__title {
-  margin-bottom: 15px;
+._order {
+  order: 1;
 }
+
+.projects {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 120px;
+}
+
 .projects__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px 20px;
+  flex-direction: column;
+  gap: 150px;
+  margin-bottom: 100px;
+
+  @media (max-width: 900px) {
+    gap: 120px;
+  }
 }
 
 .projects__item {
   display: flex;
-  flex: 0 1 30%;
-  flex-direction: column;
-  background-color: $dark-light-color-2;
-  color: $white-color;
-  border-radius: 10px;
-  padding: 0px 0px 10px 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
 
-  @media (max-width: 1024px) {
-    flex: 1 1 40%;
-  }
-
-  @media (max-width: 768px) {
-    flex: 1 1 100%;
+  @media (max-width: 900px) {
+    justify-content: flex-start;
   }
 }
 
-.projects__image {
+.project__image {
+  flex: 1 0 10%;
+  @media (max-width: 900px) {
+    flex: 1 0 100%;
+    order: 0;
+  }
+}
+
+.project__info {
+  flex: 1 0 5%;
+  @media (max-width: 900px) {
+    flex: 1 0 100%;
+  }
+}
+
+.project__title {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project__description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 5px;
   margin-bottom: 15px;
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
 }
 
-.projects__item a {
-  position: relative;
-  transition: 0.5s;
-  &:hover {
-    .projects__image {
-      filter: brightness(0.6);
-    }
-    .projects__icon {
-      display: block;
-    }
+.project__tool {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.project__links {
+  display: flex;
+  gap: 10px;
+}
+
+.projects__button {
+  background-color: transparent;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 260px;
+  border-radius: 15px;
+  padding: 15px 35px;
+  border: 1px solid gray;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: gray;
   }
-}
 
-.projects__icon {
-  font-size: 35px;
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
-.projects__name {
-  font-size: 20px;
-  text-align: center;
-}
-
-.test {
-  width: 30px;
-  height: 30px;
-  fill: red;
 }
