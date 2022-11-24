@@ -11,7 +11,7 @@ const projects = [
       "React icons",
     ],
     github: "https://github.com/klekwedge/game-shop",
-    link: "#",
+    link: "https://klekwedge-game-shop.vercel.app",
   },
   {
     title: "Портал Рик и Морти",
@@ -19,7 +19,7 @@ const projects = [
     description: "Портал Рик и Морти",
     tools: ["Next", "React", "Chakra", "React icons"],
     github: "https://github.com/klekwedge/rick-and-morty",
-    link: "#",
+    link: "https://klekwedge-rick-and-morty.vercel.app",
   },
   {
     title: "Приложение Todo",
@@ -27,7 +27,7 @@ const projects = [
     description: "Приложение Todo",
     tools: ["React", "React Router", "Chakra", "React icons"],
     github: "https://github.com/klekwedge/todo",
-    link: "#",
+    link: "https://klekwedge-todo.vercel.app",
   },
   {
     title: "Сайт-портфолио фотографа",
@@ -44,7 +44,7 @@ const projects = [
     description: "Simetra",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/denisstrizhkin/simetra",
-    link: "#",
+    link: "https://opd.strdenis.com",
   },
   {
     title: "Фильмы",
@@ -52,7 +52,7 @@ const projects = [
     description: "Фильмы",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/rs-projects/tree/js30-2.3-movie-app",
-    link: "#",
+    link: "https://klekwedge.github.io/rs-projects/js30-2.3-movie-app/",
   },
   {
     title: "Галерея фотографий",
@@ -61,7 +61,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-2.2-image-galery",
-    link: "#",
+    link: "https://klekwedge.github.io/rs-projects/js30-2.2-image-galery/",
   },
   {
     title: "Игра на запоминание",
@@ -70,7 +70,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-3.2-memory-game#",
-    link: "#",
+    link: "https://klekwedge.github.io/rs-projects/js30-3.2-memory-game/",
   },
   {
     title: "Видеоплеер",
@@ -79,7 +79,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-1.3-custom-video",
-    link: "#",
+    link: "https://klekwedge.github.io/rs-projects/js30-1.3-custom-video/",
   },
   {
     title: "Аудиоплеер",
@@ -88,7 +88,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-1.2-audio-player",
-    link: "#",
+    link: "https://klekwedge.github.io/rs-projects/js30-1.2-audio-player/",
   },
   {
     title: "Математика для детей",
@@ -96,7 +96,7 @@ const projects = [
     description: "Математика для детей",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/math-for-kids",
-    link: "#",
+    link: "https://klekwedge.github.io/math-for-kids/",
   },
   {
     title: "Математический калькулятор",
@@ -104,15 +104,15 @@ const projects = [
     description: "Математический калькулятор",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/math-calculator",
-    link: "#",
+    link: "https://klekwedge.github.io/math-calculator/",
   },
   {
     title: "CSS слайдер",
     image: "../public/assets/img/portfolio/css-slider.png",
     description: "CSS слайдер",
     tools: ["HTML", "CSS"],
-    github: "#",
-    link: "#",
+    github: "https://github.com/klekwedge/cssMemSlider",
+    link: "https://klekwedge.github.io/cssMemSlider/cssMemSlider/",
   },
   {
     title: "Лендинг «Cuda»",
@@ -120,7 +120,7 @@ const projects = [
     description: "Лендинг «Cuda»",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/cuda",
-    link: "#",
+    link: "https://klekwedge.github.io/cuda/",
   },
   {
     title: "Лендинг «Decor color expert»",
@@ -128,7 +128,7 @@ const projects = [
     description: "Лендинг «Decor color expert»",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/decor-color-expert",
-    link: "#",
+    link: "https://klekwedge.github.io/decor-color-expert/",
   },
 ];
 

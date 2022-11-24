@@ -50,19 +50,19 @@ function App() {
   }, []);
 
   return (
-    <div className="wrapper">
-      <Header />
-      <main className="main">
-        <Greetings />
-        <div className="main__container _container">
-          <About />
-          <Experience />
-          <Skills />
-          <Projects />
-        </div>
-      </main>
-      <Footer />
-    </div>
+      <div className="wrapper">
+        <Header />
+        <main className="main">
+          <Greetings />
+          <div className="main__container _container">
+            <About />
+            <Experience />
+            <Skills />
+            <Projects />
+          </div>
+        </main>
+        <Footer />
+      </div>
   );
 }
 
