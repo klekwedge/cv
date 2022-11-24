@@ -1,3 +1,3 @@
 This is my resume repository.
 
-https://klekwedge.github.io/my-cv/
+https://klekwedge-cv.vercel.app/

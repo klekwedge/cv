@@ -8,60 +8,51 @@ function Experience() {
     <section className="experience" id="experience">
       <h2 className="_title">Опыт</h2>
       <div className="_heading-decoration"></div>
-        <div className="main-cont">
-          <div id="cd-timeline" className="cd-container">
-            {workHistory &&
-              workHistory.map((work) => (
-                <div className="cd-timeline-block" key={uuidv4()}>
-                  <div className="cd-timeline-img cd-picture"></div>
-                  <div className="cd-timeline-content">
-                    <h1 className="uppercase font-bold text-2xl pl-3 pt-2 flex">
-                      {work?.companyName}
-                      <span>
-                        {work?.link && (
-                          <div className="w-auto flex space-x-5 ml-2 mt-1x relative">
-                            <a
-                              href={work.link}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FiExternalLink size="22" />
-                            </a>
-                          </div>
-                        )}
-                      </span>
-                    </h1>
-                    <h4 className="uppercase font-bold text-base pl-3 pt-2">
-                      {work?.role}
-                    </h4>
+      <div className="experience__main-cont">
+        <div className="experience__container experience__timeline">
+          {workHistory &&
+            workHistory.map((work) => (
+              <div className="experience__timeline-block" key={uuidv4()}>
+                <div className="experience__timeline-img experience__picture"></div>
+                <div className="experience__timeline-content work">
+                  <h1 className="work__title">
+                    {work?.companyName}
+                    <span>
+                      <a href={work.link} target="_blank" rel="noreferrer">
+                        <FiExternalLink size="22" />
+                      </a>
+                    </span>
+                  </h1>
+                  <h4 className="work__role">
+                    {work?.role}
+                  </h4>
 
-                    <div className="timeline-content-info">
-                      <h5 className="text-sm">{work.duration}</h5>
-                    </div>
-                    <div className="pl-2">
-                      {work?.workDes &&
-                        work.workDes.map((x) => (
-                          <h4 className="text-base pt-2" key={uuidv4()}>
-                            {" "}
-                            <span className="text-2xl">-</span> {x}{" "}
-                          </h4>
-                        ))}
-                    </div>
-                    <div className="flex overflow-auto space-x-3 pb-2 md:flex-wrap">
-                      {work?.exposer &&
-                        work.exposer.map((ex, index) => (
-                          <span
-                            className="border border-gray-500 px-2 py-1 mt-3 ml-1 rounded-lg text-sm"
-                            key={index}
-                          >
-                            {ex}
-                          </span>
-                        ))}
-                    </div>
+                  <div className="experience__content-info work__duration">
+                    <h5>{work.duration}</h5>
+                  </div>
+                  <div className="work__des-list">
+                    {work?.workDes &&
+                      work.workDes.map((x) => (
+                        <h4 className="work__des-item" key={uuidv4()}>
+                          <span className="work__des-item-point">-</span> {x}
+                        </h4>
+                      ))}
+                  </div>
+                  <div className="work__tools">
+                    {work?.exposer &&
+                      work.exposer.map((ex, index) => (
+                        <span
+                          className="work__tool"
+                          key={index}
+                        >
+                          {ex}
+                        </span>
+                      ))}
                   </div>
                 </div>
-              ))}
-          </div>
+              </div>
+            ))}
+        </div>
       </div>
     </section>
   );
