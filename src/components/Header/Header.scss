@@ -1,5 +1,11 @@
 @import "/src/scss/modules/variables";
 
+._link-number{
+  color: $complementary-color;
+  padding-right: 5px;
+}
+
+
 .header {
   position: fixed;
   z-index: 100;
@@ -24,7 +30,7 @@
   &__logo {
     display: flex;
     align-items: center;
-    width: 60px;
+    width: 55px;
   }
 
   &__list {

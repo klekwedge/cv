@@ -51,7 +51,7 @@ function Header() {
           </a>
           <nav className="menu__body" ref={menuBody}>
             <ul className="menu__list">
-              {links.map((item) => (
+              {links.map((item, index) => (
                 <li className="menu__item" key={uuidv4()}>
                   <a
                     href={item.href}
@@ -60,6 +60,7 @@ function Header() {
                     }}
                     className="menu__link _link"
                   >
+                    <span className="_link-number"> {`${index + 1}.`}</span>
                     {item.text}
                   </a>
                 </li>
