@@ -1,7 +1,8 @@
 import { FiExternalLink } from "react-icons/fi";
 import { v4 as uuidv4 } from "uuid";
 import workHistory from "../../data/experienceData";
-import "./style.ex.css";
+import "./Experience.scss";
+
 function Experience() {
   return (
     <section id="experience">

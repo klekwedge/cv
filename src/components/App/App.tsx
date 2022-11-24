@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Footer from "../Footer/Footer";
-import Greetings from "../Greetings/Greetings";
+import Home from "../Home/Home";
 import Header from "../Header/Header";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
@@ -21,8 +21,8 @@ function App() {
   }
 
   const activeAnchorLink = () => {
-    const links = document.querySelectorAll("nav a"); // ищем все навигационные ссылки
-    const sections = document.querySelectorAll("section"); // ищем все секции
+    const links = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       if (window.pageYOffset >= section.offsetTop) {
         links.forEach((link) => {
@@ -53,7 +53,7 @@ function App() {
       <div className="wrapper">
         <Header />
         <main className="main">
-          <Greetings />
+          <Home />
           <div className="main__container _container">
             <About />
             <Experience />
