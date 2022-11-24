@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Игровой магазин",
-    image: "../public/assets/img/portfolio/game-shop.png",
+    image: "assets/img/portfolio/game-shop.png",
     description: "Игровой магазин",
     tools: [
       "React",
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "Портал Рик и Морти",
-    image: "../public/assets/img/portfolio/rick-and-morty.png",
+    image: "assets/img/portfolio/rick-and-morty.png",
     description: "Портал Рик и Морти",
     tools: ["Next", "React", "Chakra", "React icons"],
     github: "https://github.com/klekwedge/rick-and-morty",
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Приложение Todo",
-    image: "../public/assets/img/portfolio/todo.png",
+    image: "assets/img/portfolio/todo.png",
     description: "Приложение Todo",
     tools: ["React", "React Router", "Chakra", "React icons"],
     github: "https://github.com/klekwedge/todo",
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "Сайт-портфолио фотографа",
-    image: "../public/assets/img/portfolio/photographer-portfolio.png",
+    image: "assets/img/portfolio/photographer-portfolio.png",
     description: "Сайт-портфолио фотографа",
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "Simetra",
-    image: "../public/assets/img/portfolio/simetra.png",
+    image: "assets/img/portfolio/simetra.png",
     description: "Simetra",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/denisstrizhkin/simetra",
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "Фильмы",
-    image: "../public/assets/img/portfolio/movie-app.png",
+    image: "assets/img/portfolio/movie-app.png",
     description: "Фильмы",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/rs-projects/tree/js30-2.3-movie-app",
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     title: "Галерея фотографий",
-    image: "../public/assets/img/portfolio/image-galery.png",
+    image: "assets/img/portfolio/image-galery.png",
     description: "Галерея фотографий",
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
@@ -65,7 +65,7 @@ const projects = [
   },
   {
     title: "Игра на запоминание",
-    image: "../public/assets/img/portfolio/memory-game.png",
+    image: "assets/img/portfolio/memory-game.png",
     description: "Игра на запоминание",
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
@@ -74,7 +74,7 @@ const projects = [
   },
   {
     title: "Видеоплеер",
-    image: "../public/assets/img/portfolio/custom-video.png",
+    image: "assets/img/portfolio/custom-video.png",
     description: "Видеоплеер",
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
@@ -83,7 +83,7 @@ const projects = [
   },
   {
     title: "Аудиоплеер",
-    image: "../public/assets/img/portfolio/audio-player.png",
+    image: "assets/img/portfolio/audio-player.png",
     description: "Аудиоплеер",
     tools: ["HTML", "SCSS", "JavaScript"],
     github:
@@ -92,7 +92,7 @@ const projects = [
   },
   {
     title: "Математика для детей",
-    image: "../public/assets/img/portfolio/math-for-kids.png",
+    image: "assets/img/portfolio/math-for-kids.png",
     description: "Математика для детей",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/math-for-kids",
@@ -100,7 +100,7 @@ const projects = [
   },
   {
     title: "Математический калькулятор",
-    image: "../public/assets/img/portfolio/math-calculator.png",
+    image: "assets/img/portfolio/math-calculator.png",
     description: "Математический калькулятор",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/math-calculator",
@@ -108,7 +108,7 @@ const projects = [
   },
   {
     title: "CSS слайдер",
-    image: "../public/assets/img/portfolio/css-slider.png",
+    image: "assets/img/portfolio/css-slider.png",
     description: "CSS слайдер",
     tools: ["HTML", "CSS"],
     github: "https://github.com/klekwedge/cssMemSlider",
@@ -116,7 +116,7 @@ const projects = [
   },
   {
     title: "Лендинг «Cuda»",
-    image: "../public/assets/img/portfolio/cuda.png",
+    image: "assets/img/portfolio/cuda.png",
     description: "Лендинг «Cuda»",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/cuda",
@@ -124,7 +124,7 @@ const projects = [
   },
   {
     title: "Лендинг «Decor color expert»",
-    image: "../public/assets/img/portfolio/decor-color-expert.png",
+    image: "assets/img/portfolio/decor-color-expert.png",
     description: "Лендинг «Decor color expert»",
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/decor-color-expert",

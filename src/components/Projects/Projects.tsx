@@ -33,7 +33,7 @@ function Projects() {
               <div className="project__links">
                 <a href={project.github} target="_blank">
                   <img
-                    src="/public/assets/svg/github.svg"
+                    src="assets/svg/github.svg"
                     alt="link to github page"
                     width="24px"
                     height="24px"

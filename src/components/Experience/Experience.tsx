@@ -5,10 +5,9 @@ import "./Experience.scss";
 
 function Experience() {
   return (
-    <section id="experience">
+    <section className="experience" id="experience">
       <h2 className="_title">Опыт</h2>
       <div className="_heading-decoration"></div>
-      <div className="">
         <div className="main-cont">
           <div id="cd-timeline" className="cd-container">
             {workHistory &&
@@ -63,7 +62,6 @@ function Experience() {
                 </div>
               ))}
           </div>
-        </div>
       </div>
     </section>
   );

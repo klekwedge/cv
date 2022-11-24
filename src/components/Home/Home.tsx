@@ -25,7 +25,7 @@ function Home() {
             </a>
           </div>
         </div>
-        <img className="home__image" src="/public/assets/svg/illustration.svg" />
+        <img className="home__image" src="assets/svg/illustration.svg" />
       </div>
     </section>
   );
