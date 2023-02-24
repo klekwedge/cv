@@ -24,11 +24,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex: 1 0 10%;
+  flex: 0 0 10%;
   text-align: center;
   gap: 8px;
 
   @media (max-width: 500px) {
-    flex: 1 0 20%; 
+    flex: 1 0 20%;
   }
 }

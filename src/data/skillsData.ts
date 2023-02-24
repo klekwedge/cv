@@ -113,7 +113,7 @@ const Familiar = [
   },
   {
     skill: "C++",
-    logo: "assets/svg/skills/cplusplus.svg",
+    logo: "assets/svg/skills/c++.svg",
   },
   {
     skill: "Python",
