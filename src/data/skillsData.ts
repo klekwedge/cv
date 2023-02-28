@@ -96,6 +96,14 @@ const Familiar = [
     logo: "assets/svg/skills/node.svg",
   },
   {
+    skill: "Redux Saga",
+    logo: "assets/svg/skills/redux-saga.svg",
+  },
+  {
+    skill: "Chart.js",
+    logo: "assets/svg/skills/chart.svg",
+  },
+  {
     skill: "jQuery",
     logo: "assets/svg/skills/jquery.svg",
   },
@@ -104,24 +112,16 @@ const Familiar = [
     logo: "assets/svg/skills/pug.svg",
   },
   {
-    skill: "Chart.js",
-    logo: "assets/svg/skills/chart.svg",
-  },
-  {
-    skill: "Redux Saga",
-    logo: "assets/svg/skills/redux-saga.svg",
-  },
-  {
-    skill: "C++",
-    logo: "assets/svg/skills/c++.svg",
-  },
-  {
     skill: "Python",
     logo: "assets/svg/skills/python.svg",
   },
   {
     skill: "Java",
     logo: "assets/svg/skills/java.svg",
+  },
+  {
+    skill: "C++",
+    logo: "assets/svg/skills/c++.svg",
   },
 ];
 export { Proficient, Familiar };
