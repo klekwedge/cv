@@ -69,14 +69,6 @@ const Proficient = [
     skill: "Figma",
     logo: "assets/svg/skills/figma.svg",
   },
-  {
-    skill: "GitHub",
-    logo: "assets/svg/skills/github.svg",
-  },
-  {
-    skill: "GitLab",
-    logo: "assets/svg/skills/gitlab.svg",
-  },
 ];
 const Familiar = [
   {
