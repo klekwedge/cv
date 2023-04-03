@@ -12,7 +12,7 @@ function Home() {
           </h3>
           <div className="home__buttons">
             <a className="home__button" href={`mailto:${EMAIL_ID}`}>
-              <img src="./assets/svg/mail-icon.svg" /> Напишите мне
+              <img src="./assets/svg/mail-icon.svg" alt='Иконка почты' /> Напишите мне
             </a>
             <a
               className="home__button"
@@ -20,12 +20,12 @@ function Home() {
               href={RESUME_LINK}
               title="Download CV in PDF format"
             >
-              <img src="./assets/svg/download-icon.svg" />
+              <img src="./assets/svg/download-icon.svg" alt='Иконка загрузки'/>
               Скачать резюме
             </a>
           </div>
         </div>
-        <img className="home__image" src="assets/svg/illustration.svg" />
+        <img className="home__image" src="assets/svg/illustration.svg" alt='Иллюстрация человека'/>
       </div>
     </section>
   );

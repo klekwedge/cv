@@ -27,8 +27,8 @@ function Header() {
     <header className="header">
       <div className="header__container _container">
         <div className="header__menu menu">
-          <a href="https://github.com/klekwedge" target="_blank">
-            <img className="menu__logo" src="assets/img/logo.png" />
+          <a href="https://github.com/klekwedge" target="_blank" rel="noreferrer">
+            <img className="menu__logo" src="assets/img/logo.png" alt='Логотип' />
           </a>
           <nav className="menu__body" ref={menuBody}>
             <ul className="menu__list">
@@ -46,7 +46,7 @@ function Header() {
             </ul>
           </nav>
           <div className="menu__icon" ref={iconMenu} onClick={iconMenuToggle}>
-            <span></span>
+            <span />
           </div>
         </div>
       </div>

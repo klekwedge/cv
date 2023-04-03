@@ -7,7 +7,7 @@ function Projects() {
   return (
     <section className="projects" id="projects">
       <h2 className="_title">Проекты</h2>
-      <div className="_heading-decoration"></div>
+      <div className="_heading-decoration" />
       <div className="projects__list">
         {projects.map((project, index) => (
           <article className="projects__item project" key={index}>
@@ -31,7 +31,7 @@ function Projects() {
                 ))}
               </div>
               <div className="project__links">
-                <a href={project.github} target="_blank">
+                <a href={project.github} target="_blank" rel="noreferrer">
                   <img
                     src="assets/svg/github.svg"
                     alt="link to github page"
@@ -39,7 +39,7 @@ function Projects() {
                     height="24px"
                   />
                 </a>
-                <a href={project.link} target="_blank">
+                <a href={project.link} target="_blank" rel="noreferrer">
                   <FiExternalLink size="24" />
                 </a>
               </div>
@@ -51,7 +51,7 @@ function Projects() {
         <a
           href={`https://github.com/${GITHUB_USERNAME}`}
           target="_blank"
-          className="projects__button"
+          className="projects__button" rel="noreferrer"
         >
           <span>See more on Github</span>
         </a>

@@ -5,14 +5,14 @@ function About() {
     <section className="main__about about" id="about">
       <div className="_heading">
         <h3 className="about__title _title">Обо мне</h3>
-        <div className="_heading-decoration"></div>
+        <div className="_heading-decoration" />
       </div>
       <div className="about__content">
         <div className="about__photo ">
           <img
             className="about__image flip-in-hor-bottom"
             src="assets/img/personal-photo.jpg"
-            alt="My personal photo"
+            alt="Мое фото"
           />
         </div>
         <div className="about__text ">

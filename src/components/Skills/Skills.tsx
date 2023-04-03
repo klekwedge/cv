@@ -5,7 +5,7 @@ function Skills() {
   return (
     <section className="skills" id="skills">
       <h2 className="_title">Навыки и инструменты</h2>
-      <div className="_heading-decoration"></div>
+      <div className="_heading-decoration" />
 
       {Proficient?.length > 0 && (
         <div className="skills__experienced experienced">

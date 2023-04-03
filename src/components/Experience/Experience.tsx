@@ -7,13 +7,13 @@ function Experience() {
   return (
     <section className="experience" id="experience">
       <h2 className="_title">Опыт</h2>
-      <div className="_heading-decoration"></div>
+      <div className="_heading-decoration" />
       <div className="experience__main-cont">
         <div className="experience__container experience__timeline">
           {workHistory &&
             workHistory.map((work) => (
               <div className="experience__timeline-block" key={uuidv4()}>
-                <div className="experience__timeline-img experience__picture"></div>
+                <div className="experience__timeline-img experience__picture" />
                 <div className="experience__timeline-content work">
                   <h1 className="work__title">
                     {work?.companyName}
