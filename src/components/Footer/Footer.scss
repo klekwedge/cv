@@ -35,3 +35,10 @@
     transform: scale(1.2);
   }
 }
+
+._link-icon {
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

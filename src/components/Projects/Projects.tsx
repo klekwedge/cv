@@ -35,12 +35,12 @@ function Projects() {
                   <img
                     src="assets/svg/github.svg"
                     alt="link to github page"
-                    width="24px"
-                    height="24px"
+                    width="28px"
+                    height="28px"
                   />
                 </a>
                 <a href={project.link} target="_blank" rel="noreferrer">
-                  <FiExternalLink size="24" />
+                  <FiExternalLink size="28" />
                 </a>
               </div>
             </div>
