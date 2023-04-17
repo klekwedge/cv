@@ -1,4 +1,4 @@
-import "./About.scss";
+import './About.scss';
 
 function About() {
   return (
@@ -9,25 +9,19 @@ function About() {
       </div>
       <div className="about__content">
         <div className="about__photo ">
-          <img
-            className="about__image flip-in-hor-bottom"
-            src="assets/img/personal-photo.jpg"
-            alt="Мое фото"
-          />
+          <img className="about__image flip-in-hor-bottom" src="assets/img/personal-photo.jpg" alt="Мое фото" />
         </div>
         <div className="about__text ">
           <p className="about__paragraph _text ">
-            Являюсь студентом 3 курса СПбПУ на направлении «Системный анализ и
-            управление», специализация «Теория и математические методы
-            системного анализа и управления в технических, экономичеcких и
-            социальных системах». На 1 курсе программировал на C++, на 2 курсе
-            был опыт программирования на Python. Закончил курс JS / FRONT-END
-            STAGE 0 от компании EPAM.
+            Студент 3 курса СПбПУ на направлении «Системный анализ и управление», специализация «Теория и математические
+            методы системного анализа и управления в технических, экономичеcких и социальных системах». Закончил курс JS
+            / FRONT-END STAGE 0 от компании EPAM.
           </p>
           <br />
           <p className="about__paragraph _text ">
-            Имею базовое представление о Next.js, Redux Saga, Node.js и
-            паттернах проектирования.
+            Имею базовое представление о Next.js, Redux Saga, Node.js, React Native, Express, Mongo DB, SQL, MySQL,
+            Python, Java, C++, GraphQL, Jest, Enzyme, React Testing Library, Figma, jQuery, Pug, ООП и паттернах
+            проектирования.
           </p>
         </div>
       </div>
