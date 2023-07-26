@@ -16,7 +16,7 @@ const workHistory = [
       "адаптивная верстка",
       "взаимодействие с серверной частью веб-приложения"
     ],
-    exposer: ["React"],
+    exposer: ["React", "Redux Toolkit", "React Router"],
     link: "#",
   },
   {
