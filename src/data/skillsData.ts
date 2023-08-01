@@ -41,6 +41,10 @@ const Proficient = [
     logo: "assets/svg/skills/proficient/redux.svg",
   },
   {
+    skill: "Ant Design",
+    logo: "assets/svg/skills/proficient/ant-design.svg",
+  },
+  {
     skill: "Chakra UI",
     logo: "assets/svg/skills/proficient/chakra.svg",
   },
