@@ -1,35 +1,34 @@
 # CV
 
-This is my resume repository.
-You can also read this README in [русский](https://github.com/klekwedge/cv/blob/main/README.RU.md)
+Это репозиторий моего резюме.
+Вы также можете прочитать этот README на [английском](https://github.com/klekwedge/cv/blob/main/README.EN.md)
 
-## Table of contents
+## Оглавление
 
-- [Overview](#overview)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
+- [Обзор](#обзор)
+  - [Ссылки](#ссылки)
+- [Мой процесс](#мой-процесс)
+  - [Стек](#стек)
+- [Автор](#автор)
 
-## Overview
+## Обзор
 
-### Links
+### Ссылки
 
-- [Solution URL](https://github.com/klekwedge/cv)
-- [Live Site URL](https://klekwedge-cv.vercel.app/)
+- [Ссылка на проект](https://github.com/klekwedge/cv)
+- [Деплой](https://klekwedge-cv.vercel.app/)
 
-## My process
+## Мой процесс
 
-### Built with
+### Стек
 
 - React
 - TypeScript
 - Vite
 - SCSS
 
-## Author
+## Автор
 
-- [Website](https://klekwedge-cv.vercel.app/)
+- [Вебсайт](https://klekwedge-cv.vercel.app/)
 - [Linkedin](https://www.linkedin.com/in/klekwedge/)
 - [Facebook](https://www.facebook.com/klekwedge)
-
