@@ -1,7 +1,7 @@
 # CV
 
 This is my resume repository.
-You can also read this README in [русский](https://github.com/klekwedge/cv/blob/main/README.md)
+Вы также можете прочитать этот README на [русском](https://github.com/klekwedge/cv/blob/main/README.md)
 
 ## Table of contents
 
