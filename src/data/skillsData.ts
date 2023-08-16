@@ -49,6 +49,10 @@ const Proficient = [
     logo: "assets/svg/skills/proficient/chakra.svg",
   },
   {
+    skill: "Mantine",
+    logo: "assets/svg/skills/proficient/mantine.svg",
+  },
+  {
     skill: "Vue",
     logo: "assets/svg/skills/proficient/vue.svg",
   },
@@ -64,6 +68,10 @@ const Proficient = [
     skill: "Vuetify",
     logo: "assets/svg/skills/proficient/vuetifyjs.svg",
   },
+  {
+    skill: "Postman",
+    logo: "assets/svg/skills/proficient/postman.svg",
+  },
 ];
 
 const Familiar = [
@@ -78,6 +86,10 @@ const Familiar = [
   {
     skill: "Next",
     logo: "assets/svg/skills/basic/next.svg",
+  },
+  {
+    skill: "Mobx",
+    logo: "assets/svg/skills/basic/mobx.svg",
   },
   {
     skill: "GraphQL",
