@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "Countries",
-    image: "",
+    image: "assets/img/portfolio/countries.png",
     description: "Countries",
     tools: ["React", "TypeScript", "Redux toolkit", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/countries",
@@ -56,7 +56,7 @@ const projects = [
   },
   {
     title: "Игровая библиотека (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/games-library.png",
     description: "Игровая библиотека (тестовое задание)",
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/games-library",
@@ -80,7 +80,7 @@ const projects = [
   },
   {
     title: "Hacker news (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/hacker-news.png",
     description: "Hacker news (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/hacker-news",
@@ -88,7 +88,7 @@ const projects = [
   },
   {
     title: "Books (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/books.png",
     description: "Books (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/books",
@@ -96,7 +96,7 @@ const projects = [
   },
   {
     title: "Сапер (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/minesweeper.png",
     description: "Сапер (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/minesweeper",
@@ -104,7 +104,7 @@ const projects = [
   },
   {
     title: "Kanban доска (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/kanban-board.png",
     description: "Kanban доска (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/kanban-board",
@@ -112,7 +112,7 @@ const projects = [
   },
   {
     title: "Message form (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/message-form.png",
     description: "Message form (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/message-form",
@@ -120,7 +120,7 @@ const projects = [
   },
   {
     title: "Курс валют (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/rostelecom-test-task.png",
     description: "Курс валют (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/rostelecom-test-task",
@@ -128,7 +128,7 @@ const projects = [
   },
   {
     title: "Github search",
-    image: "",
+    image: "assets/img/portfolio/github-search.png",
     description: "Github search",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/github-search",
@@ -136,7 +136,7 @@ const projects = [
   },
   {
     title: "Галерея изображений (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/image-gallery.png",
     description: "Галерея изображений (тестовое задание)",
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/image-gallery",
@@ -144,7 +144,7 @@ const projects = [
   },
   {
     title: "Кастомная таблица (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/custom-table.png",
     description: "Кастомная таблица (тестовое задание)",
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/custom-table",
@@ -152,7 +152,7 @@ const projects = [
   },
   {
     title: "Antd таблица (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/antd-table.png",
     description: "Antd таблица (тестовое задание)",
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/antd-table",
@@ -184,7 +184,7 @@ const projects = [
   },
   {
     title: "Cat Pinterest",
-    image: "",
+    image: "assets/img/portfolio/cat-pinterest.png",
     description: "Cat Pinterest",
     tools: ["React", "TypeScript", "Redux toolkit", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/cat-pinterest",
