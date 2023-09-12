@@ -86,14 +86,14 @@ const projects = [
     github: "https://github.com/klekwedge/hacker-news",
     link: "https://klekwedge-hacker-news.vercel.app/",
   },
-  {
-    title: "Books (тестовое задание)",
-    image: "assets/img/portfolio/books.png",
-    description: "Books (тестовое задание)",
-    tools: ["React", "TypeScript", "Chakra UI"],
-    github: "https://github.com/klekwedge/books",
-    link: "https://books-klekwedge.vercel.app/",
-  },
+  // {
+  //   title: "Books (тестовое задание)",
+  //   image: "assets/img/portfolio/books.png",
+  //   description: "Books (тестовое задание)",
+  //   tools: ["React", "TypeScript", "Chakra UI"],
+  //   github: "https://github.com/klekwedge/books",
+  //   link: "https://books-klekwedge.vercel.app/",
+  // },
   {
     title: "Сапер (тестовое задание)",
     image: "assets/img/portfolio/minesweeper.png",
@@ -160,7 +160,7 @@ const projects = [
   },
   {
     title: "Todo (тестовое задание)",
-    image: "",
+    image: "assets/img/portfolio/todo-infotecs.png",
     description: "Todo (тестовое задание)",
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/todo-infotecs",
