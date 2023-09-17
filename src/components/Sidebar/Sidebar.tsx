@@ -1,4 +1,4 @@
-// import './About.scss';
+import './Sidebar.scss';
 
 function Sidebar() {
   return (
@@ -15,9 +15,8 @@ function Sidebar() {
           <p className="title">Frontend разработчик</p>
         </div>
 
-        <button className="info_more-btn" data-sidebar-btn>
+        <button type='button' className="info_more-btn" data-sidebar-btn>
           <span>Показать контакты</span>
-
           {/* <ion-icon name="chevron-down"></ion-icon> */}
         </button>
 
@@ -25,14 +24,14 @@ function Sidebar() {
 
       <div className="sidebar-info_more">
 
-        <div className="separator"></div>
+        <div className="separator"/>
 
         <ul className="contacts-list">
 
           <li className="contact-item">
 
             <div className="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              {/* <ion-icon name="mail-outline"></ion-icon> */}
             </div>
 
             <div className="contact-info">
@@ -52,7 +51,7 @@ function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Telegram</p>
 
-              <a href="tel:" className="contact-link"></a>
+              <a href="tel:" className="contact-link">8</a>
             </div>
 
           </li>
@@ -72,7 +71,7 @@ function Sidebar() {
 
         </ul>
 
-        <div className="separator"></div>
+        <div className="separator"/>
 
         <ul className="social-list">
 
