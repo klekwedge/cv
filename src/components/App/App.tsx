@@ -1,38 +1,33 @@
-import { useEffect } from "react";
-import About from "../About/About";
-import Experience from "../Experience/Experience";
-import Footer from "../Footer/Footer";
-import Home from "../Home/Home";
-import Header from "../Header/Header";
-import Projects from "../Projects/Projects";
-import Skills from "../Skills/Skills";
+import { useEffect } from 'react';
+import About from '../About/About';
+import Experience from '../Experience/Experience';
+import Footer from '../Footer/Footer';
+import Home from '../Home/Home';
+import Header from '../Header/Header';
+import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
+import Sidebar from '../Sidebar/Sidebar'
 
 function App() {
   function changeHeaderOnScroll() {
-    const menuBody = document.querySelector(".header") as HTMLElement;
-    if (
-      document.body.scrollTop > 40 ||
-      document.documentElement.scrollTop > 40
-    ) {
-      menuBody.style.boxShadow = "0 0 5px 2px #2d2d2d";
+    const menuBody = document.querySelector('.header') as HTMLElement;
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+      menuBody.style.boxShadow = '0 0 5px 2px #2d2d2d';
     } else {
-      menuBody.style.boxShadow = "";
+      menuBody.style.boxShadow = '';
     }
   }
 
   const activeAnchorLink = () => {
-    const links = document.querySelectorAll("nav a");
-    const sections = document.querySelectorAll("section");
+    const links = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('section');
     sections.forEach((section) => {
       if (window.pageYOffset >= section.offsetTop) {
         links.forEach((link) => {
-          link.classList.remove("_active-link");
+          link.classList.remove('_active-link');
 
-          if (
-            link.getAttribute("href")?.replace("#", "") ===
-            section.getAttribute("id")
-          ) {
-            link.classList.add("_active-link");
+          if (link.getAttribute('href')?.replace('#', '') === section.getAttribute('id')) {
+            link.classList.add('_active-link');
           }
         });
       }
@@ -40,29 +35,30 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => activeAnchorLink());
-    window.addEventListener("scroll", () => changeHeaderOnScroll());
+    window.addEventListener('scroll', () => activeAnchorLink());
+    window.addEventListener('scroll', () => changeHeaderOnScroll());
 
     return () => {
-      window.removeEventListener("scroll", () => activeAnchorLink());
-      window.addEventListener("scroll", () => changeHeaderOnScroll());
+      window.removeEventListener('scroll', () => activeAnchorLink());
+      window.addEventListener('scroll', () => changeHeaderOnScroll());
     };
   }, []);
 
   return (
-      <div className="wrapper">
-        <Header />
-        <main className="main">
-          <Home />
-          <div className="main__container _container">
-            <About />
-            <Experience />
-            <Skills />
-            <Projects />
-          </div>
-        </main>
-        <Footer />
-      </div>
+    <div className="wrapper">
+      <Header />
+      <main className="main">
+        <Home />
+        <div className="main__container _container">
+          {/* <Sidebar /> */}
+          <About />
+          <Experience />
+          <Skills />
+          <Projects />
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
