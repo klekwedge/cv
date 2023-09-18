@@ -1,9 +1,21 @@
 /* eslint-disable react/no-array-index-key */
-import './Portfolio.scss';
+import { useEffect, useState } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 import projects from '../../data/projectData';
+import './Portfolio.scss';
 
 function Portfolio() {
+  const [filter, setFilter] = useState('all');
+  const [filterProjects, setFilterProjects] = useState(projects);
+
+  useEffect(() => {
+    if (filter === 'all') {
+      setFilterProjects(projects);
+    } else {
+      setFilterProjects([...projects.filter((project) => project.filter === filter)]);
+    }
+  }, [filter]);
+
   return (
     <article className="portfolio" data-page="portfolio">
       <header>
@@ -13,37 +25,37 @@ function Portfolio() {
       <section className="projects">
         <ul className="filter-list">
           <li className="filter-item">
-            <button type="button" className="active" data-filter-btn>
+            <button type="button" className={filter === 'all' ? 'active' : ''} onClick={() => setFilter('all')}>
               Все
             </button>
           </li>
 
           <li className="filter-item">
-            <button type="button" data-filter-btn>
+            <button type="button" className={filter === 'react' ? 'active' : ''} onClick={() => setFilter('react')}>
               React
             </button>
           </li>
 
-          <li className="filter-item">
-            <button type="button" data-filter-btn>
+          {/* <li className="filter-item">
+            <button type="button" className={filter === 'vue' ? 'active' : ''} onClick={() => setFilter('vue')}>
               Vue
             </button>
-          </li>
+          </li> */}
 
           <li className="filter-item">
-            <button type="button" data-filter-btn>
+            <button type="button" className={filter === 'test' ? 'active' : ''} onClick={() => setFilter('test')}>
               Тестовые задания
             </button>
           </li>
 
-          <li className="filter-item">
-            <button type="button" data-filter-btn>
+          {/* <li className="filter-item">
+            <button type="button" className={filter === 'fm' ? 'active' : ''} onClick={() => setFilter('fm')}>
               Frontend Mentor
             </button>
-          </li>
+          </li> */}
 
           <li className="filter-item">
-            <button type="button" data-filter-btn>
+            <button type="button" className={filter === 'js' ? 'active' : ''} onClick={() => setFilter('js')}>
               Native JS
             </button>
           </li>
@@ -86,7 +98,7 @@ function Portfolio() {
         </div>
 
         <ul className="project-list">
-          {projects.map((project, index) => (
+          {filterProjects.map((project, index) => (
             <li className="project-item" key={index}>
               <figure className="project-img">
                 <img src={project.image} alt={project.title} />
