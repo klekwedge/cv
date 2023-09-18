@@ -1,7 +1,7 @@
-// import './Resume.scss';
 import { IoBriefcaseOutline, IoBookOutline } from 'react-icons/io5';
 import { v4 as uuidv4 } from 'uuid';
 import workHistory from '../../data/experienceData';
+import './Resume.scss';
 
 function Resume() {
   return (
