@@ -3,78 +3,74 @@
 function Sidebar() {
   return (
     <aside className="sidebar" data-sidebar>
-
       <div className="sidebar-info">
-
         <figure className="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="my avatar" width="80"/>
+          <img src="../../../public/assets/img/personal-photo.jpg" alt="my avatar" width="80" />
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Антонов Андрей">Антонов Андрей</h1>
+          <h1 className="name" title="Антонов Андрей">
+            Антонов Андрей
+          </h1>
           <p className="title">Frontend разработчик</p>
         </div>
 
-        <button type='button' className="info_more-btn" data-sidebar-btn>
+        <button type="button" className="info_more-btn" data-sidebar-btn>
           <span>Показать контакты</span>
           {/* <ion-icon name="chevron-down"></ion-icon> */}
         </button>
-
       </div>
 
       <div className="sidebar-info_more">
-
-        <div className="separator"/>
+        <div className="separator" />
 
         <ul className="contacts-list">
-
           <li className="contact-item">
-
-            <div className="icon-box">
-              {/* <ion-icon name="mail-outline"></ion-icon> */}
-            </div>
+            <div className="icon-box">{/* <ion-icon name="mail-outline"></ion-icon> */}</div>
 
             <div className="contact-info">
               <p className="contact-title">Почта</p>
 
-              <a href="mailto:richard@example.com" className="contact-link">richard@example.com</a>
+              <a href="mailto:antonov.andrey.10101@gmail.com" className="contact-link">
+                antonov.andrey.10101@gmail.com
+              </a>
             </div>
-
           </li>
 
           <li className="contact-item">
-
-            <div className="icon-box">
-              {/* <ion-icon name="phone-portrait-outline"></ion-icon> */}
-            </div>
+            <div className="icon-box">{/* <ion-icon name="phone-portrait-outline"></ion-icon> */}</div>
 
             <div className="contact-info">
               <p className="contact-title">Telegram</p>
 
-              <a href="tel:" className="contact-link">8</a>
+              <a href="https://t.me/klekwedge" className="contact-link">
+                @klekwedge
+              </a>
             </div>
-
           </li>
 
           <li className="contact-item">
-
-            <div className="icon-box">
-              {/* <ion-icon name="location-outline"></ion-icon> */}
-            </div>
-
+            <div className="icon-box">{/* <ion-icon name="mail-outline"></ion-icon> */}</div>
             <div className="contact-info">
-              <p className="contact-title">Локация</p>
-              <address>Saint Petersburg</address>
+              <p className="contact-title">Linkedin</p>
+              <a href="https://www.linkedin.com/in/klekwedge" className="contact-link">
+                @klekwedge
+              </a>
             </div>
-
           </li>
 
+          <li className="contact-item">
+            <div className="icon-box">{/* <ion-icon name="location-outline"></ion-icon> */}</div>
+            <div className="contact-info">
+              <p className="contact-title">Локация</p>
+              <address>Санкт-Петербург</address>
+            </div>
+          </li>
         </ul>
 
-        <div className="separator"/>
+        <div className="separator" />
 
         <ul className="social-list">
-
           <li className="social-item">
             <a href="/" className="social-link">
               {/* <ion-icon name="logo-facebook"></ion-icon> */}
@@ -92,11 +88,8 @@ function Sidebar() {
               {/* <ion-icon name="logo-instagram"></ion-icon> */}
             </a>
           </li>
-
         </ul>
-
       </div>
-
     </aside>
   );
 }
