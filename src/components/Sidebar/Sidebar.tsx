@@ -16,11 +16,6 @@ function Sidebar() {
           </h1>
           <p className="title">Frontend разработчик</p>
         </div>
-
-        <button type="button" className="info_more-btn" data-sidebar-btn>
-          <span>Показать контакты</span>
-          {/* <ion-icon name="chevron-down"></ion-icon> */}
-        </button>
       </div>
 
       <div className="sidebar-info_more">
