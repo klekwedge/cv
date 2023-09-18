@@ -17,7 +17,7 @@ function Portfolio() {
   }, [filter]);
 
   return (
-    <article className="portfolio" data-page="portfolio">
+    <article className="portfolio">
       <header>
         <h2 className="h2 article-title">Портфолио</h2>
       </header>

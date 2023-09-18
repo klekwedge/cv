@@ -5,7 +5,7 @@ import './Resume.scss';
 
 function Resume() {
   return (
-    <article className="resume" data-page="resume">
+    <article className="resume">
       <header>
         <h2 className="h2 article-title">Опыт работы</h2>
       </header>

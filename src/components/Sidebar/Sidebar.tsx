@@ -4,7 +4,7 @@ import { IoMailOutline, IoLocationOutline, IoLinkOutline } from 'react-icons/io5
 
 function Sidebar() {
   return (
-    <aside className="sidebar" data-sidebar>
+    <aside className="sidebar">
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img src="/assets/img/personal-photo.jpg" alt="my avatar" />

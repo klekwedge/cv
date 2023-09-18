@@ -3,7 +3,7 @@ import './About.scss';
 
 function About() {
   return (
-    <article className="about" data-page="about">
+    <article className="about">
       <header>
         <h2 className="h2 article-title">Обо мне</h2>
       </header>
