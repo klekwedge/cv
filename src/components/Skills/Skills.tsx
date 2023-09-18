@@ -4,9 +4,7 @@ import "./Skills.scss";
 function Skills() {
   return (
     <section className="skills" id="skills">
-      <h2 className="_title">Навыки и инструменты</h2>
-      <div className="_heading-decoration" />
-
+      <h2 className="h3">Навыки и инструменты</h2>
       {Proficient?.length > 0 && (
         <div className="skills__experienced experienced">
           <h2 className="experienced__title"> Опытный </h2>

@@ -1,12 +1,11 @@
-@import "/src/scss/modules/variables";
-
+@import '/src/scss/modules/variables';
 
 .header {
   position: fixed;
   z-index: 100;
   width: 100%;
   transition: box-shadow 0.5s ease;
-  box-shadow: "";
+  box-shadow: '';
   background-color: $background-color;
 
   &__menu {
@@ -94,7 +93,7 @@
 
   .menu__icon::before,
   .menu__icon::after {
-    content: "";
+    content: '';
   }
 
   .menu__icon::before {
@@ -129,7 +128,7 @@
   }
 
   .menu__body._active::before {
-    content: "";
+    content: '';
     position: fixed;
     width: 100%;
     top: 0;
