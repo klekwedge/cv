@@ -1,6 +1,5 @@
-// import './Sidebar.scss';
-
 import Skills from '../Skills/Skills';
+import './About.scss';
 
 function About() {
   return (

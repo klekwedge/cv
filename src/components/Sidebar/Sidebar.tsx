@@ -20,7 +20,6 @@ function Sidebar() {
 
       <div className="sidebar-info_more">
         <div className="separator" />
-
         <ul className="contacts-list">
           <li className="contact-item">
             <div className="icon-box">
@@ -62,7 +61,6 @@ function Sidebar() {
         </ul>
 
         <div className="separator" />
-
         <ul className="social-list">
           <li className="social-item">
             <a href="https://t.me/klekwedge" className="social-link">
