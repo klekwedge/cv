@@ -1,4 +1,4 @@
-// import './Sidebar.scss';
+import './Sidebar.scss';
 import { BsLinkedin, BsTelegram, BsGithub } from 'react-icons/bs';
 import { IoMailOutline, IoLocationOutline, IoLinkOutline } from 'react-icons/io5';
 
