@@ -30,7 +30,7 @@ function Sidebar() {
               <p className="contact-title">Почта</p>
 
               <a href="mailto:antonov.andrey.10101@gmail.com" className="contact-link">
-                antonov.andrey.10101@gmail.com
+                Gmail
               </a>
             </div>
           </li>
@@ -44,7 +44,7 @@ function Sidebar() {
               <p className="contact-title">Резюме</p>
 
               <a href="/" className="contact-link">
-                hh.ru
+                Google Drive
               </a>
             </div>
           </li>
@@ -64,19 +64,19 @@ function Sidebar() {
         <ul className="social-list">
           <li className="social-item">
             <a href="https://t.me/klekwedge" className="social-link">
-              <BsTelegram size='22'/>
+              <BsTelegram size="22" />
             </a>
           </li>
 
           <li className="social-item">
             <a href="https://github.com/klekwedge" className="social-link">
-              <BsGithub size='22'/>
+              <BsGithub size="22" />
             </a>
           </li>
 
           <li className="social-item">
             <a href="https://www.linkedin.com/in/klekwedge" className="social-link">
-              <BsLinkedin size='22'/>
+              <BsLinkedin size="22" />
             </a>
           </li>
         </ul>
