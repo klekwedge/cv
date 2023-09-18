@@ -13,7 +13,7 @@ const projects = [
     ],
     github: "https://github.com/klekwedge/game-shop",
     link: "https://klekwedge-game-shop.vercel.app",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Портал Рик и Морти",
@@ -22,7 +22,7 @@ const projects = [
     tools: ["Next", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/rick-and-morty",
     link: "https://klekwedge-rick-and-morty.vercel.app",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Приложение Todo",
@@ -31,7 +31,7 @@ const projects = [
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/todo",
     link: "https://klekwedge-todo.vercel.app",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Помодоро",
@@ -40,7 +40,7 @@ const projects = [
     tools: ["React", "TypeScript", "Redux", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/pomodoro",
     link: "https://klekwedge-pomodoro.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Прогноз погоды",
@@ -49,7 +49,7 @@ const projects = [
     tools: ["React", "TypeScript", "Redux", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/weather-forecast",
     link: "https://klekwedge-weather-forecast.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Countries",
@@ -58,7 +58,7 @@ const projects = [
     tools: ["React", "TypeScript", "Redux", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/countries",
     link: "https://klekwedge-countries.vercel.app",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Игровая библиотека",
@@ -67,7 +67,7 @@ const projects = [
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/games-library",
     link: "https://klekwedge-games-library.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Камень, ножница, бумага",
@@ -76,7 +76,7 @@ const projects = [
     tools: ["React", "TypeScript", "Redux", "Chakra UI"],
     github: "https://github.com/klekwedge/rock-paper-scissors",
     link: "https://klekwedge-rock-paper-scissors.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Генератор цвета",
@@ -85,7 +85,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/color-generator",
     link: "https://klekwedge-color-generator.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Hacker news",
@@ -94,7 +94,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/hacker-news",
     link: "https://klekwedge-hacker-news.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   // {
   //   title: "Books (тестовое задание)",
@@ -111,7 +111,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/minesweeper",
     link: "https://klekwedge-minesweeper.vercel.app",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Kanban доска",
@@ -120,7 +120,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/kanban-board",
     link: "https://klekwedge-kanban-board.vercel.app",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Message form",
@@ -129,7 +129,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/message-form",
     link: "https://klekwedge-message-form.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Курс валют",
@@ -138,7 +138,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/rostelecom-test-task",
     link: "https://klekwedge-rostelecom-test-task.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Github search",
@@ -147,7 +147,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/github-search",
     link: "https://klekwedge-github-search.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Галерея изображений",
@@ -156,7 +156,7 @@ const projects = [
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/image-gallery",
     link: "https://klekwedge-image-gallery.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Кастомная таблица",
@@ -165,7 +165,7 @@ const projects = [
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/custom-table",
     link: "https://klekwedge-custom-table.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Antd таблица",
@@ -174,7 +174,7 @@ const projects = [
     tools: ["React", "React Router", "Chakra UI", "React icons"],
     github: "https://github.com/klekwedge/antd-table",
     link: "https://klekwedge-antd-table.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Todo",
@@ -183,7 +183,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/todo-infotecs",
     link: "https://klekwedge-todo-infotecs.vercel.app/",
-    filter: 'test',
+    filter: ['test']
   },
   {
     title: "Угадай слово",
@@ -192,7 +192,7 @@ const projects = [
     tools: ["React", "TypeScript", "Chakra UI"],
     github: "https://github.com/klekwedge/guess-the-word",
     link: "https://klekwedge-guess-the-word.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Викторина",
@@ -201,7 +201,7 @@ const projects = [
     tools: ["React", "TypeScript", "Redux", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/quiz",
     link: "https://klekwedge-quiz.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Cat Pinterest",
@@ -210,7 +210,7 @@ const projects = [
     tools: ["React", "TypeScript", "Redux", "Chakra UI", "SCSS"],
     github: "https://github.com/klekwedge/cat-pinterest",
     link: "https://klekwedge-cat-pinterest.vercel.app/",
-    filter: 'react',
+    filter: ['react']
   },
   {
     title: "Сайт-портфолио фотографа",
@@ -220,7 +220,7 @@ const projects = [
     github:
       "https://github.com/klekwedge/rs-projects/tree/photographer-portfolio",
     link: "#",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Simetra",
@@ -229,7 +229,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/denisstrizhkin/simetra",
     link: "https://opd.strdenis.com",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Фильмы",
@@ -238,7 +238,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/rs-projects/tree/js30-2.3-movie-app",
     link: "https://klekwedge.github.io/rs-projects/js30-2.3-movie-app/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Галерея фотографий",
@@ -248,7 +248,7 @@ const projects = [
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-2.2-image-galery",
     link: "https://klekwedge.github.io/rs-projects/js30-2.2-image-galery/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Игра на запоминание",
@@ -258,7 +258,7 @@ const projects = [
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-3.2-memory-game#",
     link: "https://klekwedge.github.io/rs-projects/js30-3.2-memory-game/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Видеоплеер",
@@ -268,7 +268,7 @@ const projects = [
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-1.3-custom-video",
     link: "https://klekwedge.github.io/rs-projects/js30-1.3-custom-video/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Аудиоплеер",
@@ -278,7 +278,7 @@ const projects = [
     github:
       "https://github.com/klekwedge/rs-projects/tree/js30-1.2-audio-player",
     link: "https://klekwedge.github.io/rs-projects/js30-1.2-audio-player/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Математика для детей",
@@ -287,7 +287,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/math-for-kids",
     link: "https://klekwedge.github.io/math-for-kids/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Математический калькулятор",
@@ -296,7 +296,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/math-calculator",
     link: "https://klekwedge.github.io/math-calculator/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "CSS слайдер",
@@ -305,7 +305,7 @@ const projects = [
     tools: ["HTML", "CSS"],
     github: "https://github.com/klekwedge/cssMemSlider",
     link: "https://klekwedge.github.io/cssMemSlider/cssMemSlider/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Лендинг «Cuda»",
@@ -314,7 +314,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/cuda",
     link: "https://klekwedge.github.io/cuda/",
-    filter: 'js',
+    filter: ['js']
   },
   {
     title: "Лендинг «Decor color expert»",
@@ -323,7 +323,7 @@ const projects = [
     tools: ["HTML", "SCSS", "JavaScript"],
     github: "https://github.com/klekwedge/decor-color-expert",
     link: "https://klekwedge.github.io/decor-color-expert/",
-    filter: 'js',
+    filter: ['js']
   },
 ];
 

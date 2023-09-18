@@ -12,7 +12,7 @@ function Portfolio() {
     if (filter === 'all') {
       setFilterProjects(projects);
     } else {
-      setFilterProjects([...projects.filter((project) => project.filter === filter)]);
+      setFilterProjects([...projects.filter((project) => project.filter.includes(filter))]);
     }
   }, [filter]);
 

@@ -20,7 +20,7 @@ function Resume() {
 
         <ol className="timeline-list">
           {workHistory.map((work) => (
-            <li className="timeline-item">
+            <li className="timeline-item" key={uuidv4()}>
               <h4 className="h4 timeline-item-title">{work.role}</h4>
               <h4 className="h5">{work.companyName}</h4>
               <span>{work.duration}</span>
