@@ -1,25 +1,34 @@
 // import './Sidebar.scss';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
-          <button type="button" className="navbar-link  active" data-nav-link>
+          <NavLink to="/" className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')} data-nav-link>
             Обо мне
-          </button>
+          </NavLink>
         </li>
 
         <li className="navbar-item">
-          <button type="button" className="navbar-link" data-nav-link>
+          <NavLink
+            to="/resume"
+            data-nav-link
+            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+          >
             Опыт работы
-          </button>
+          </NavLink>
         </li>
 
         <li className="navbar-item">
-          <button type="button" className="navbar-link" data-nav-link>
+          <NavLink
+            to="/portfolio"
+            className={({ isActive }) => (isActive ? 'navbar-link active' : 'navbar-link')}
+            data-nav-link
+          >
             Портфолио
-          </button>
+          </NavLink>
         </li>
       </ul>
     </nav>
