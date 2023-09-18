@@ -6,31 +6,19 @@ function NavBar() {
       <ul className="navbar-list">
         <li className="navbar-item">
           <button type="button" className="navbar-link  active" data-nav-link>
-            About
+            Обо мне
           </button>
         </li>
 
         <li className="navbar-item">
           <button type="button" className="navbar-link" data-nav-link>
-            Resume
+            Опыт работы
           </button>
         </li>
 
         <li className="navbar-item">
           <button type="button" className="navbar-link" data-nav-link>
-            Portfolio
-          </button>
-        </li>
-
-        <li className="navbar-item">
-          <button type="button" className="navbar-link" data-nav-link>
-            Blog
-          </button>
-        </li>
-
-        <li className="navbar-item">
-          <button type="button" className="navbar-link" data-nav-link>
-            Contact
+            Портфолио
           </button>
         </li>
       </ul>
