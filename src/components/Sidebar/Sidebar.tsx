@@ -7,7 +7,7 @@ function Sidebar() {
     <aside className="sidebar" data-sidebar>
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="../../../public/assets/img/personal-photo.jpg" alt="my avatar" width="80" />
+          <img src="/assets/img/personal-photo.jpg" alt="my avatar" />
         </figure>
 
         <div className="info-content">

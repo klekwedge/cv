@@ -1,6 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import { useEffect, useState } from 'react';
-import { FiExternalLink } from 'react-icons/fi';
+import { BsLink45Deg, BsGithub } from 'react-icons/bs';
 import projects from '../../data/projectData';
 import './Portfolio.scss';
 
@@ -114,10 +114,10 @@ function Portfolio() {
                 </div>
                 <div className="project__links">
                   <a href={project.github} target="_blank" rel="noreferrer">
-                    <img src="assets/svg/github.svg" alt="link to github page" width="28px" height="28px" />
+                    <BsGithub size="22" color="white" />
                   </a>
                   <a href={project.link} target="_blank" rel="noreferrer">
-                    <FiExternalLink size="28" color="white" />
+                    <BsLink45Deg size="26" color="white" />
                   </a>
                 </div>
               </div>
