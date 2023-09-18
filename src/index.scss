@@ -218,6 +218,7 @@ article {
 .h5 {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
+  margin-bottom: 5px;
 }
 
 .article-title {
@@ -1984,4 +1985,10 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+.work__des-item {
+  display: flex;
+  gap: 5px;
+  font-weight: 400;
 }

@@ -1,4 +1,5 @@
 // import './Resume.scss';
+import { v4 as uuidv4 } from 'uuid';
 import workHistory from '../../data/experienceData';
 
 function Resume() {
@@ -40,8 +41,16 @@ function Resume() {
           {workHistory.map((work) => (
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">{work.role}</h4>
+              <h4 className="h5">{work.companyName}</h4>
               <span>{work.duration}</span>
-              <p className="timeline-text">{work.workDes}</p>
+              <div className="timeline-text">
+                {work.workDes.map((x) => (
+                  <h4 className="work__des-item" key={uuidv4()}>
+                    <span className="work__des-item-point">-</span> {x}
+                  </h4>
+                ))}
+              </div>
+              {/* <p className="timeline-text">{work.workDes}</p> */}
             </li>
           ))}
         </ol>
