@@ -1,12 +1,8 @@
 import { useEffect } from 'react';
-import About from '../About/About';
-import Experience from '../Experience/Experience';
-import Footer from '../Footer/Footer';
-import Home from '../Home/Home';
-import Header from '../Header/Header';
-import Projects from '../Projects/Projects';
-import Skills from '../Skills/Skills';
-import Sidebar from '../Sidebar/Sidebar'
+import Sidebar from '../Sidebar/Sidebar';
+import NavBar from '../NavBar/NavBar';
+import NewAbout from '../NewAbout/NewAbout';
+import Portfolio from '../Portfolio/Portfolio';
 
 function App() {
   function changeHeaderOnScroll() {
@@ -45,20 +41,15 @@ function App() {
   }, []);
 
   return (
-    <div className="wrapper">
-      <Header />
-      <main className="main">
-        <Home />
-        <div className="main__container _container">
-          {/* <Sidebar /> */}
-          <About />
-          <Experience />
-          <Skills />
-          <Projects />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <main>
+      {/* <Header /> */}
+      <Sidebar />
+      <div className="main-content">
+        <NavBar />
+        <NewAbout />
+        <Portfolio />
+      </div>
+    </main>
   );
 }
 
