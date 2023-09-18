@@ -41,6 +41,12 @@ function Portfolio() {
               Frontend Mentor
             </button>
           </li>
+
+          <li className="filter-item">
+            <button type="button" data-filter-btn>
+              Native JS
+            </button>
+          </li>
         </ul>
 
         <div className="filter-select-box">

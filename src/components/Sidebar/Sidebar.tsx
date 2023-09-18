@@ -1,4 +1,5 @@
 // import './Sidebar.scss';
+import { IoMailOutline, IoLocationOutline, IoLinkOutline } from 'react-icons/io5';
 
 function Sidebar() {
   return (
@@ -26,7 +27,9 @@ function Sidebar() {
 
         <ul className="contacts-list">
           <li className="contact-item">
-            <div className="icon-box">{/* <ion-icon name="mail-outline"></ion-icon> */}</div>
+            <div className="icon-box">
+              <IoMailOutline />
+            </div>
 
             <div className="contact-info">
               <p className="contact-title">Почта</p>
@@ -38,29 +41,23 @@ function Sidebar() {
           </li>
 
           <li className="contact-item">
-            <div className="icon-box">{/* <ion-icon name="phone-portrait-outline"></ion-icon> */}</div>
+            <div className="icon-box">
+              <IoLinkOutline />
+            </div>
 
             <div className="contact-info">
-              <p className="contact-title">Telegram</p>
+              <p className="contact-title">Резюме</p>
 
-              <a href="https://t.me/klekwedge" className="contact-link">
-                @klekwedge
+              <a href="/" className="contact-link">
+                hh.ru
               </a>
             </div>
           </li>
 
           <li className="contact-item">
-            <div className="icon-box">{/* <ion-icon name="mail-outline"></ion-icon> */}</div>
-            <div className="contact-info">
-              <p className="contact-title">Linkedin</p>
-              <a href="https://www.linkedin.com/in/klekwedge" className="contact-link">
-                @klekwedge
-              </a>
+            <div className="icon-box">
+              <IoLocationOutline />
             </div>
-          </li>
-
-          <li className="contact-item">
-            <div className="icon-box">{/* <ion-icon name="location-outline"></ion-icon> */}</div>
             <div className="contact-info">
               <p className="contact-title">Локация</p>
               <address>Санкт-Петербург</address>
@@ -72,20 +69,20 @@ function Sidebar() {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href="/" className="social-link">
-              {/* <ion-icon name="logo-facebook"></ion-icon> */}
+            <a href="https://www.linkedin.com/in/klekwedge" className="social-link">
+              <img className="social-image" src="/public/assets/svg/linkedIn.svg" alt="linkedIn logo" />
             </a>
           </li>
 
           <li className="social-item">
             <a href="/" className="social-link">
-              {/* <ion-icon name="logo-twitter"></ion-icon> */}
+              <img className="social-image" src="/public/assets/svg/github.svg" alt="linkedIn logo" />
             </a>
           </li>
 
           <li className="social-item">
             <a href="/" className="social-link">
-              {/* <ion-icon name="logo-instagram"></ion-icon> */}
+              <img className="social-image" src="/public/assets/svg/telegram.svg" alt="linkedIn logo" />
             </a>
           </li>
         </ul>
