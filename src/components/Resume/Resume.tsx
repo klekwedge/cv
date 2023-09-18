@@ -42,7 +42,7 @@ function Resume() {
             <IoBookOutline />
           </div>
 
-          <h3 className="h3">Education</h3>
+          <h3 className="h3">Образование</h3>
         </div>
 
         <ol className="timeline-list">
