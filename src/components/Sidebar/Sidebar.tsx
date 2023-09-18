@@ -1,4 +1,5 @@
 // import './Sidebar.scss';
+import { BsLinkedin, BsTelegram, BsGithub } from 'react-icons/bs';
 import { IoMailOutline, IoLocationOutline, IoLinkOutline } from 'react-icons/io5';
 
 function Sidebar() {
@@ -69,20 +70,20 @@ function Sidebar() {
 
         <ul className="social-list">
           <li className="social-item">
+            <a href="https://t.me/klekwedge" className="social-link">
+              <BsTelegram size='22'/>
+            </a>
+          </li>
+
+          <li className="social-item">
+            <a href="https://github.com/klekwedge" className="social-link">
+              <BsGithub size='22'/>
+            </a>
+          </li>
+
+          <li className="social-item">
             <a href="https://www.linkedin.com/in/klekwedge" className="social-link">
-              <img className="social-image" src="/public/assets/svg/linkedIn.svg" alt="linkedIn logo" />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="/" className="social-link">
-              <img className="social-image" src="/public/assets/svg/github.svg" alt="linkedIn logo" />
-            </a>
-          </li>
-
-          <li className="social-item">
-            <a href="/" className="social-link">
-              <img className="social-image" src="/public/assets/svg/telegram.svg" alt="linkedIn logo" />
+              <BsLinkedin size='22'/>
             </a>
           </li>
         </ul>
