@@ -44,9 +44,9 @@ function Resume() {
               <h4 className="h5">{work.companyName}</h4>
               <span>{work.duration}</span>
               <div className="timeline-text">
-                {work.workDes.map((x) => (
+                {work.workDes.map((des) => (
                   <h4 className="work__des-item" key={uuidv4()}>
-                    <span className="work__des-item-point">-</span> {x}
+                    <span>-</span> {des}
                   </h4>
                 ))}
               </div>
