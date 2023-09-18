@@ -5,7 +5,7 @@ import "./Experience.scss";
 
 function Experience() {
   return (
-    <section className="experience" id="experience">
+    <section className="experience active" id="experience">
       <h2 className="_title">Опыт</h2>
       <div className="_heading-decoration" />
       <div className="experience__main-cont">
