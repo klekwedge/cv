@@ -42,8 +42,7 @@ function Sidebar() {
 
             <div className="contact-info">
               <p className="contact-title">Резюме</p>
-
-              <a href="/" className="contact-link">
+              <a href="https://drive.google.com/file/d/1k89ThJtqQOLiNZYApYS6vxYHfoD7vKdm/view?usp=sharing" className="contact-link">
                 Google Drive
               </a>
             </div>
